@@ -33,7 +33,7 @@ class userController extends Controller
             'role' => $request->role,
             'foto' => $request->foto,
             'password' => bcrypt($request->password),
-            'remember_token' => Str::random(60),
+            'remember_token' => Str::random(60) ,
         ]);
 
         if($request->hasfile('foto')){

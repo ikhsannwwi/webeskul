@@ -96,19 +96,19 @@
               <div data-anim="slide-up delay-3" class="row justify-center">
                 <div class="col-xl-8 col-lg-9 col-md-11">
                   <h5>VISI</h5>
-                  <p class="mt-30">{{$data->visi}}</p>
+                  <p class="mt-30">{!!$data->visi!!}</p>
                 </div>
   
                 <div class="col-xl-8 col-lg-9 col-md-11">
                   <div class="mt-60 lg:mt-40">
                     <h5>MISI</h5>
-                    <p class="mt-30">{{$data->misi_eskul}}</p>
+                    <p class="mt-30">{!!$data->misi_eskul!!}</p>
                   </div>
                 </div>
                 <div class="col-xl-8 col-lg-9 col-md-11">
                   <div class="mt-60 lg:mt-40">
                     <h5>Program Kerja</h5>
-                    <p class="mt-30">{{$data->program_kerja}}</p>
+                    <p class="mt-30">{!!$data->program_kerja!!}</p>
                   </div>
                 </div>
               </div>

@@ -135,14 +135,14 @@
                   
                   
 
-                  {{-- <button class="section-slider-nav -prev -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-prev">
+                  
+                  <button class="section-slider-nav -prev -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-prev">
                     <i class="icon icon-arrow-left text-24"></i>
                   </button>
     
                   <button class="section-slider-nav -next -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-next">
                     <i class="icon icon-arrow-right text-24"></i>
-                  </button> --}}
-
+                  </button>
                 </div>
 
                 <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">

@@ -37,7 +37,7 @@
     <h2>Login to your account</h2>
     <form action="loginproses" method="POST">
       @csrf
-      <input type="text" name="email" placeholder="Email" autofocus required value="{{ old('email')}}"/>
+      <input type="text" name="email" placeholder="Email" autofocus required />
       <input type="password" name="password" placeholder="Password" required/>
       <button>Login</button>
     </form>
