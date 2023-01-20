@@ -62,9 +62,9 @@
 
         <div class="col-lg-5">
           <h2 class="text-30 lh-16">{{$row->nama_kepsek}}</h2>
-          <p class="text-dark-1 mt-30">{{$row->pembuka_sambutan}}</p>
-          <p class="pr-50 lg:pr-0 mt-25">{{$row->isi_sambutan}}</p>
-          <p class="pr-50 lg:pr-0 mt-25">{{$row->penutup_sambutan}}</p>
+          <p class="text-dark-1 mt-30">{!!$row->pembuka_sambutan!!}</p>
+          <p class="pr-50 lg:pr-0 mt-25">{!!$row->isi_sambutan!!}</p>
+          <p class="pr-50 lg:pr-0 mt-25">{!!$row->penutup_sambutan!!}</p>
         </div>
         </div>
         @endforeach

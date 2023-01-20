@@ -200,7 +200,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -237,7 +237,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -274,7 +274,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -311,7 +311,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -348,7 +348,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -385,7 +385,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -422,7 +422,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -459,7 +459,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -496,7 +496,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -533,7 +533,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -570,7 +570,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -607,7 +607,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -644,7 +644,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -681,7 +681,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -718,7 +718,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -755,7 +755,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -792,7 +792,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -829,7 +829,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -866,7 +866,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -903,7 +903,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -940,7 +940,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -977,7 +977,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1014,7 +1014,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1051,7 +1051,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1088,7 +1088,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1125,7 +1125,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1162,7 +1162,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1199,7 +1199,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1236,7 +1236,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1273,7 +1273,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1310,7 +1310,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1347,7 +1347,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1384,7 +1384,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>
@@ -1421,7 +1421,7 @@
                         
                         <td>
                           <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+                          
 
                         </td>
                           </tr>

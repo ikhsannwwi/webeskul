@@ -426,9 +426,9 @@ class DatabaseSeeder extends Seeder
         kepsek::create([
             'nama_kepsek' => 'Bejo Siswoyo S.Pd',
             'foto_kepsek' => Str::random(5).'.png',
-            'pembuka_sambutan' => '<p>'.Str::random(15).'</p>',
-            'isi_sambutan' => '<p>'.Str::random(25).'</p>'.'<p>'.Str::random(90).'</p>'.'<p>'.Str::random(50).'</p>',
-            'penutup_sambutan' => '<p>'.Str::random(20).'</p>',
+            'pembuka_sambutan' => Str::random(15),
+            'isi_sambutan' => Str::random(25).'<br>'.Str::random(90).'<br>'.Str::random(50),
+            'penutup_sambutan' => Str::random(20),
         ]);
         wakasek::create([
             'nama_wakasek' => 'Nurdin Ruslih S.Pd',
