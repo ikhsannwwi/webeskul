@@ -172,12 +172,13 @@
                         <th>Aksi</th>
                           </tr>
                         </thead>
-                        @if (auth()->user()->role=='adminitc')
+                        @if (auth()->user()->role=='adminmpk')
                         <tbody>
                           @php
                             $no = 1;
                           @endphp
-                          @foreach ($adminitc as $index => $row)
+                              
+                          @foreach ($adminmpk as $index => $row)
                           <tr>
                         <td>{{$no++}}</td>
                         <td>{{$row->nama_eskul}}</td>
@@ -205,14 +206,1253 @@
                           </tr>
                           <tr>
                             @endforeach
-                        </tbody>
-                        @endif
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminosis')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminosis as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminirma')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminirma as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpks')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpks as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpramukaputra')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpramukaputra as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpramukaputri')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpramukaputri as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpaskibra')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpaskibra as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminvolly')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminvolly as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminfutsalputri')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminfutsalputri as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminfutsalputra')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminfutsalputra as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminsepakbola')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminsepakbola as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminbasket')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminbasket as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminhockey')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminhockey as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminbadminton')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminbadminton as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminkarate')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminkarate as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='admintaekwondo')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($admintaekwondo as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminsilat')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminsilat as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='admintarungderajat')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($admintarungderajat as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminkir')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminkir as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminkopsis')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminkopsis as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpmr')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpmr as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminsenitari')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminsenitari as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminmarchingband')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminmarchingband as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminsenikriya')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminsenikriya as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminpaduansuara')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminpaduansuara as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminkarawitan')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminkarawitan as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminteater')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminteater as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminsenimusik')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminsenimusik as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminitclub')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminitclub as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminbroadcast')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminbroadcast as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminenglishclub')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminenglishclub as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminkoreanclub')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminkoreanclub as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='adminjapanclub')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($adminjapanclub as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+                        @if (auth()->user()->role=='admindeutschclub')
+                        <tbody>
+                          @php
+                            $no = 1;
+                          @endphp
+                              
+                          @foreach ($admindeutschclub as $index => $row)
+                          <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nama_eskul}}</td>
+                        <td>{{$row->slug}}</td>
+                        <td>{{$row->id}}</td>
+                        <td>
+                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                        </td>
+                        <td>{{$row->pembina}}</td>
+                        <td>{{$row->ketua}}</td>
+                        <td>{{$row->wakilketua}}</td>
+                        <td>{{$row->jadwal_kumpulan}}</td>
+                        <td>{{$row->visi}}</td>
+                        <td>{{$row->misi_eskul}}</td>
+                        <td>{{$row->program_kerja}}</td>
+                        <td>{{$row->nama_instagram}}</td>
+                        
+
+                        
+                        <td>
+                          <a href="/editeskul/{{$row->id}}" class="btn btn-warning">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_eskul}}"  id="delete">Delete</a>
+
+                        </td>
+                          </tr>
+                          <tr>
+                            @endforeach
+                            
+                          </tbody>
+                          @endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          
 
                         @if (auth()->user()->role=='root')
                         <tbody>
                           @php
                             $no = 1;
                           @endphp
+                          
                           @foreach ($data as $index => $row)
                           <tr>
                         <td>{{$index + $data->firstitem()}}</td>

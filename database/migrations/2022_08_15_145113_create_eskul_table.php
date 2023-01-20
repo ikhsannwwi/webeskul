@@ -16,6 +16,7 @@ class CreateEskulTable extends Migration
         Schema::create('eskuls', function (Blueprint $table) {
             $table->id();
             $table->string('nama_eskul');
+            $table->string('slug');
             $table->string('logo');
             $table->string('pembina');
             $table->string('ketua');
