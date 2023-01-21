@@ -503,7 +503,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 5,
             'nama_eskul' => 'Pramuka Putra',
-            'slug' => 'pramuka-putra5',
+            'slug' => 'pramukaputra5',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -517,7 +517,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 6,
             'nama_eskul' => 'Pramuka Putri',
-            'slug' => 'pramuka-putri6',
+            'slug' => 'pramukaputri6',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -559,7 +559,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 9,
             'nama_eskul' => 'Futsal Putra',
-            'slug' => 'futsal-putra9',
+            'slug' => 'futsalputra9',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -573,7 +573,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 10,
             'nama_eskul' => 'Futsal Putri',
-            'slug' => 'futsal-putri10',
+            'slug' => 'futsalputri10',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -587,7 +587,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 11,
             'nama_eskul' => 'Sepak Bola',
-            'slug' => 'sepak-bola11',
+            'slug' => 'sepakbola11',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -685,7 +685,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 18,
             'nama_eskul' => 'Tarung Derajat',
-            'slug' => 'tarung-derajat18',
+            'slug' => 'tarungderajat18',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -741,7 +741,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' =>22,
             'nama_eskul' => 'Seni Tari',
-            'slug' => 'seni-tari22',
+            'slug' => 'senitari22',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -755,7 +755,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 23,
             'nama_eskul' => 'Marching Band',
-            'slug' => 'marching-band23',
+            'slug' => 'marchingband23',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -769,7 +769,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 24,
             'nama_eskul' => 'Seni Kriya',
-            'slug' => 'seni-kriya24',
+            'slug' => 'senikriya24',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -783,7 +783,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 25,
             'nama_eskul' => 'Paduan Suara',
-            'slug' => 'paduan-suara25',
+            'slug' => 'paduansuara25',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -825,7 +825,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 28,
             'nama_eskul' => 'Seni Musik',
-            'slug' => 'seni-musik28',
+            'slug' => 'senimusik28',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -839,7 +839,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 29,
             'nama_eskul' => 'IT Club',
-            'slug' => 'it-club29',
+            'slug' => 'itclub29',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -867,7 +867,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 31,
             'nama_eskul' => 'English Club',
-            'slug' => 'english-club31',
+            'slug' => 'englishclub31',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -881,7 +881,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 32,
             'nama_eskul' => 'Korean Club',
-            'slug' => 'korean-club32',
+            'slug' => 'koreanclub32',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -895,7 +895,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 33,
             'nama_eskul' => 'Japan Club',
-            'slug' => 'japan-club33',
+            'slug' => 'japanclub33',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
@@ -909,7 +909,7 @@ class DatabaseSeeder extends Seeder
         eskul::create([
             'id' => 34,
             'nama_eskul' => 'Deutsch Club',
-            'slug' => 'deutsch-club34',
+            'slug' => 'deutschclub34',
             'logo' => Str::random(7).'.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),

@@ -80,7 +80,7 @@
                         <td>{{$no++}}</td>
                         <td>{{$row->judul_berita}}</td>
                         <td>
-                          <img src="{{asset('fotoberita/'.$row->foto_berita)}}" width="200px" alt="">
+                          <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" width="200px" alt="">
                         </td>
                         <td>{{$row->tanggal_berita}}</td>
                         

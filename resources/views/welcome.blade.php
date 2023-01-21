@@ -123,7 +123,7 @@
                     <a class="" href="{{$row->slug}}">
                       <div data-anim-child="slide-left delay-2" class="infoCard -type-1">
                           <div class="infoCard__image">
-                            <img style="width: 100px; height: 99px;" src="{{asset('logoeskul/'.$row->logo)}}" alt="{{$row->logo}}">
+                            <img style="width: 100px; height: 99px;" src="{{asset('images/logo-eskul/'.$row->logo)}}" alt="{{$row->logo}}">
                           </div>
                           <h5 class="infoCard__title text-17 lh-15 mt-10">{{$row->nama_eskul}}</h5>
                       </div>
@@ -189,7 +189,7 @@
                       <a href="courses-single-1.html" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                       <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
-                          <img class="w-1/1" src="{{asset('fotokegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
+                          <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
                           <div class="coursesCard__image_overlay rounded-8"></div>
                           </div>
                           <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
@@ -213,7 +213,7 @@
   
                           <div class="coursesCard-footer">
                           <div class="coursesCard-footer__author">
-                              <img src="{{asset('logodokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
+                              <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
                               <div>Admin</div>
                           </div>
                           </div>

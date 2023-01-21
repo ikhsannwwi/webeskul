@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\berita;
 
 
@@ -29,8 +30,10 @@ class beritaController extends Controller
     public function insertdataberita(Request $request){
         $data = berita::create($request->all());
         if($request->hasfile('foto_berita')){
-            $request->file('foto_berita')->move('fotoberita/', $request->file('foto_berita')->getClientOriginalName());
-            $data->foto_berita = $request->file('foto_berita')->getClientOriginalName();
+            $nama_baru = Str::random(10) . '.' . $request->file('foto_berita')->extension();
+            $request->file('foto_berita')->move('images/foto-berita/', $nama_baru);
+            $data->foto_berita = $nama_baru;
+            
             $data->save();
         }
         return redirect()->route('berita')->with('success',' Data Berhasil Di Tambahkan');
@@ -43,17 +46,33 @@ class beritaController extends Controller
 
     public function updateberita(Request $request , $id){
         $data = berita::find($id);
-        $data->update($request->all());
         if($request->hasfile('foto_berita')){
-            $request->file('foto_berita')->move('fotoberita/', $request->file('foto_berita')->getClientOriginalName());
-            $data->foto_berita = $request->file('foto_berita')->getClientOriginalName();
+            if(File_exists(public_path('images/foto-berita/'.$data->foto_berita))){ //either you can use file path instead of $data->image
+                unlink(public_path('images/foto-berita/'.$data->foto_berita));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+            }
+        }
+
+        $data->update($request->all());
+        if($request->hasfile('foto_berita')){ 
+           
+            
+            $nama_baru = Str::random(10) . '.' . $request->file('foto_berita')->extension();
+            $request->file('foto_berita')->move('images/foto-berita/', $nama_baru);
+            $data->foto_berita = $nama_baru;
             $data->save();
         }
         return redirect()->route('berita')->with('success',' Data Berhasil Di Update');
     }
 
     public function deleteberita($id){
-        $data = berita::find($id);
+        $data = berita::find($id);  
+
+        if(File_exists(public_path('images/foto-berita/'.$data->foto_berita))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/foto-berita/'.$data->foto_berita));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+        }
+        // unlink(public_path('images/foto-berita/'.$data->foto_berita));
+        echo public_path('images/foto-berita/'.$data->foto_berita);
+
         $data->delete();
         return redirect()->route('berita')->with('success',' Data Berhasil Di Delete');
     }

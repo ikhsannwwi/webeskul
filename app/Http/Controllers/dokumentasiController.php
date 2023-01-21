@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\dokumentasi;
 
 
@@ -39,12 +40,17 @@ class dokumentasiController extends Controller
     public function insertdatadokumentasi(Request $request){
         $data = dokumentasi::create($request->all());
         if($request->hasfile('logo')){
-            $request->file('logo')->move('logodokumentasi/', $request->file('logo')->getClientOriginalName());
-            $data->logo = $request->file('logo')->getClientOriginalName();
+            $nama_baru = Str::random(10) . '.' . $request->file('logo')->extension();
+            $request->file('logo')->move('images/dokumentasi/logo-dokumentasi/', $nama_baru);
+            $data->logo = $nama_baru;
+            
             $data->save();
+        
         }if($request->hasfile('foto_kegiatan')){
-            $request->file('foto_kegiatan')->move('fotokegiatan/', $request->file('foto_kegiatan')->getClientOriginalName());
-            $data->foto_kegiatan = $request->file('foto_kegiatan')->getClientOriginalName();
+            $nama_baru = Str::random(10) . '.' . $request->file('foto_kegiatan')->extension();
+            $request->file('foto_kegiatan')->move('images/dokumentasi/foto-kegiatan/', $nama_baru);
+            $data->foto_kegiatan = $nama_baru;
+            
             $data->save();
         }
         return redirect()->route('dokumentasi')->with('success',' Data Berhasil Di Tambahkan');
@@ -57,14 +63,35 @@ class dokumentasiController extends Controller
 
     public function updatedokumentasi(Request $request , $id){
         $data = dokumentasi::find($id);
+        if($request->hasfile('logo')){
+            if(File_exists(public_path('images/dokumentasi/logo-dokumentasi/'.$data->logo))){ //either you can use file path instead of $data->image
+                unlink(public_path('images/dokumentasi/logo-dokumentasi/'.$data->logo));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+            }
+        }
+        if($request->hasfile('foto_kegiatan')){
+            if(File_exists(public_path('images/dokumentasi/foto-kegiatan/'.$data->foto_kegiatan))){ //either you can use file path instead of $data->image
+                unlink(public_path('images/dokumentasi/foto-kegiatan/'.$data->foto_kegiatan));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+            }
+        }
         $data->update($request->all());
         if($request->hasfile('logo')){
-            $request->file('logo')->move('logodokumentasi/', $request->file('logo')->getClientOriginalName());
-            $data->logo = $request->file('logo')->getClientOriginalName();
+            if(File_exists(public_path('images/dokumentasi/logo-dokumentasi'.$data->logo))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/dokumentasi/logo-dokumentasi'.$data->logo));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+         }
+            $nama_baru = Str::random(10) . '.' . $request->file('logo')->extension();
+            $request->file('logo')->move('images/dokumentasi/logo-dokumentasi/', $nama_baru);
+            $data->logo = $nama_baru;
+            
             $data->save();
-        }elseif($request->hasfile('foto_kegiatan')){
-            $request->file('foto_kegiatan')->move('fotokegiatan/', $request->file('foto_kegiatan')->getClientOriginalName());
-            $data->foto_kegiatan = $request->file('foto_kegiatan')->getClientOriginalName();
+        
+        }if($request->hasfile('foto_kegiatan')){
+            if(File_exists(public_path('images/dokumentasi/foto-kegiatan'.$data->foto_kegiatan))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/dokumentasi/foto-kegiatan'.$data->foto_kegiatan));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+         }
+            $nama_baru = Str::random(10) . '.' . $request->file('foto_kegiatan')->extension();
+            $request->file('foto_kegiatan')->move('images/dokumentasi/foto-kegiatan/', $nama_baru);
+            $data->foto_kegiatan = $nama_baru;
+            
             $data->save();
         }
         return redirect()->route('dokumentasi')->with('success',' Data Berhasil Di Update');
@@ -72,6 +99,15 @@ class dokumentasiController extends Controller
 
     public function deletedokumentasi($id){
         $data = dokumentasi::find($id);
+        if(File_exists(public_path('images/dokumentasi/logo-dokumentasi'.$data->logo))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/dokumentasi/logo-dokumentasi'.$data->logo));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+        }
+        if(File_exists(public_path('images/dokumentasi/foto-kegiatan'.$data->foto_kegiatan))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/dokumentasi/foto-kegiatan'.$data->foto_kegiatan));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+        }
+        // unlink(public_path('images/dokumentasi/logo-dokumentasi'.$data->foto_kegiatan));
+        echo public_path('images/dokumentasi/logo-dokumentasi'.$data->foto_kegiatan);
+        echo public_path('images/dokumentasi/foto-kegiatan'.$data->foto_kegiatan);
         $data->delete();
         return redirect()->route('dokumentasi')->with('success',' Data Berhasil Di Delete');
     }

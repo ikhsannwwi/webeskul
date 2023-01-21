@@ -76,11 +76,11 @@
                         <td>{{$no++}}</td>
                         <td>{{$row->nama_kegiatan}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="120px" alt="">
+                          <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" width="120px" alt="">
                         </td>
                         <td>{{$row->penyelenggara}}</td>
                         <td>
-                          <img src="{{asset('fotokegiatan/'.$row->foto_kegiatan)}}" width="120px" alt="">
+                          <img src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" width="120px" alt="">
                         </td>
                         
                         

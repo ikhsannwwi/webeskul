@@ -37,8 +37,9 @@ class userController extends Controller
         ]);
 
         if($request->hasfile('foto')){
-            $request->file('foto')->move('fotousers/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
+            $nama_baru = Str::random(10) . '.' . $request->file('foto')->extension();
+            $request->file('foto')->move('images/foto-user/', $nama_baru);
+            $data->foto = $nama_baru;
             $data->save();
         }
         return redirect()->route('users')->with('success',' Data Berhasil Di Tambahkan');
@@ -52,20 +53,26 @@ class userController extends Controller
 
     public function updateuser(Request $request , $id){
         $data = user::find($id);
+        if($request->hasfile('foto')){
+            if(File_exists(public_path('images/foto-user/'.$data->foto))){ //either you can use file path instead of $data->image
+                unlink(public_path('images/foto-user/'.$data->foto));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+            }
+        }
         $data->update([
             'name' => $request->name,
             'email' => $request->email,
             'role' => $request->role,
-            'foto' => $request->foto,
+            // 'foto' => $request->foto,
             'password' => bcrypt($request->password),
             'remember_token' => Str::random(60),
         ]);
-
         if($request->hasfile('foto')){
-            $request->file('foto')->move('fotousers/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
+            $nama_baru = Str::random(10) . '.' . $request->file('foto')->extension();
+            $request->file('foto')->move('images/foto-user/', $nama_baru);
+            $data->foto = $nama_baru;
             $data->save();
         }
+
         
         return redirect()->route('users')->with('success',' Data Berhasil Di Update');
     }
@@ -95,6 +102,13 @@ class userController extends Controller
 
     public function deleteuser($id){
         $data = user::find($id);
+
+        if(File_exists(public_path('images/foto-user/'.$data->foto))){ //either you can use file path instead of $data->image
+            unlink(public_path('images/foto-user/'.$data->foto));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
+        }
+        // unlink(public_path('images/foto-user/'.$data->foto));
+        echo public_path('images/foto-user/'.$data->foto);
+
         $data->delete();
         return redirect()->route('users')->with('success',' Data Berhasil Di Delete');
     }

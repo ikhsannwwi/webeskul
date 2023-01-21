@@ -56,7 +56,7 @@
             
         <div class="col-lg-6 pr-50 sm:pr-15">
           <div class="composition -type-8">
-            <div class="-el-1"><img src="{{asset('foto/'.$row->foto_kepsek)}}" alt="{{$row->foto_kepsek}}"></div>
+            <div class="-el-1"><img src="{{asset('images/foto-kepsek/'.$row->foto_kepsek)}}" alt="{{$row->foto_kepsek}}"></div>
           </div>
         </div>
 

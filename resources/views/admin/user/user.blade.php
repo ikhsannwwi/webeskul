@@ -77,7 +77,7 @@
                       <tr>
                         <td>{{$no++}}</td>
                         <td>
-                          <img src="{{asset('fotousers/'.$row->foto)}}" width="120px" alt="{{$row->foto}}">
+                          <img src="{{asset('images/foto-user/'.$row->foto)}}" width="120px" alt="{{$row->foto}}">
                         </td>
                         <td>{{$row->name}}</td>
                         <td>{{$row->role}}</td>

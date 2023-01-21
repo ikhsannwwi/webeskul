@@ -78,7 +78,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -185,7 +185,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -222,7 +222,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -259,7 +259,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -296,7 +296,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -333,7 +333,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -370,7 +370,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -407,7 +407,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -444,7 +444,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -481,7 +481,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -518,7 +518,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -555,7 +555,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -592,7 +592,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -629,7 +629,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -666,7 +666,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -703,7 +703,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -740,7 +740,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -777,7 +777,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -814,7 +814,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -851,7 +851,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -888,7 +888,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -925,7 +925,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -962,7 +962,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -999,7 +999,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1036,7 +1036,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1073,7 +1073,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1110,7 +1110,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1147,7 +1147,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1184,7 +1184,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1221,7 +1221,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1258,7 +1258,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1295,7 +1295,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1332,7 +1332,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1369,7 +1369,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1406,7 +1406,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>
@@ -1460,7 +1460,7 @@
                         <td>{{$row->slug}}</td>
                         <td>{{$row->id}}</td>
                         <td>
-                          <img src="{{asset('logoeskul/'.$row->logo)}}" width="70px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->logo)}}" width="70px" alt="">
                         </td>
                         <td>{{$row->pembina}}</td>
                         <td>{{$row->ketua}}</td>

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{asset('template/dist/css/adminlte.css')}}">
   <link rel="stylesheet" href="{{asset('adminhub/style.css')}}">
   {{-- icon title  --}}
-  <link rel="icon" type="image/x-icon" href="{{asset('logoeskul/smea.ico')}}">
+  <link rel="icon" type="image/x-icon" href="{{asset('images/page-loader/smea.ico')}}">
   {{-- font awesome --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -26,7 +26,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__wobble" src="{{asset('logoeskul/smea.png')}}" alt="AdminLTELogo" height="180" width="180">
+    <img class="animation__wobble" src="{{asset('images/page-loader/smea.png')}}" alt="AdminLTELogo" height="180" width="180">
   </div>
 
   <!-- Navbar -->
@@ -84,7 +84,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/" class="brand-link">
-      <img src="{{asset('logoeskul/smea.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="{{asset('images/page-loader/smea.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Webeskul</span>
     </a>
 
@@ -93,7 +93,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('fotousers/'.Auth::user()->foto)}}" class="img-circle elevation-2" alt="{{Auth::user()->foto}}">
+          <img src="{{asset('images/foto-user/'.Auth::user()->foto)}}" class="img-circle elevation-2" alt="{{Auth::user()->foto}}">
         </div>
         <div class="info">
           <a href="#" class="d-block">{{Auth::user()->name}}</a>

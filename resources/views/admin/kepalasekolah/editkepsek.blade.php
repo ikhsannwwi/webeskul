@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Foto Kepala Sekolah</label>
-                    <input required type="file" class="form-control" value="{{$data->foto_kepsek}}" name="foto_kepsek" >
+                    <input type="file" class="form-control" value="{{$data->foto_kepsek}}" name="foto_kepsek" >
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Pembuka Sambutan</label>

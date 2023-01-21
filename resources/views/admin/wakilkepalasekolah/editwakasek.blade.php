@@ -37,7 +37,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/updatekepsek/{{$data->id}}" method="POST" enctype="multipart/form-data">
+              <form action="/updatewakasek/{{$data->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Foto Wakil Kepala Sekolah</label>
-                    <input required type="file" class="form-control" value="{{$data->foto_wakasek}}" name="foto_wakasek" >
+                    <input  type="file" class="form-control" value="{{$data->foto_wakasek}}" name="foto_wakasek" >
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Pembuka Sambutan</label>

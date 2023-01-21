@@ -75,7 +75,7 @@
                         <td>{{$no++}}</td>
                         <td>{{$row->nama_wakasek}}</td>
                         <td>
-                          <img src="{{asset('foto/'.$row->foto_wakasek)}}" width="120px" alt="{{$row->foto_wakasek}}">
+                          <img src="{{asset('images/foto-wakasek/'.$row->foto_wakasek)}}" width="120px" alt="{{$row->foto_wakasek}}">
                         </td>
                         <td>{{$row->pembuka_sambutan}}</td>
                         <td>{{$row->isi_sambutan}}</td>
