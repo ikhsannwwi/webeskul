@@ -1507,7 +1507,8 @@
       </section>
 
 
-
+      @if (auth()->user()->role=='root')
+      
       <div class="container-fluid">
         <div class="row">
           <!-- left column -->
@@ -1580,6 +1581,7 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
+              @endif
 
               @push('script')
               <script>

@@ -3824,7 +3824,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blogCard.-type-2 .blogCard__image img {
-  width: 100%;
+  width: 150px;
 }
 
 .blogCard.-type-2 .blogCard__content {

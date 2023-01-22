@@ -136,11 +136,11 @@
                   
 
                   
-                  <button class="section-slider-nav -prev -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-prev">
+                  <button class="js-prev section-slider-nav -prev -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-prev">
                     <i class="icon icon-arrow-left text-24"></i>
                   </button>
     
-                  <button class="section-slider-nav -next -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-next">
+                  <button class="js-next section-slider-nav -next -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-next">
                     <i class="icon icon-arrow-right text-24"></i>
                   </button>
                 </div>
@@ -186,7 +186,7 @@
                   <div class="swiper-slide">
                   <div data-anim-child="slide-up delay-1">
   
-                      <a href="courses-single-1.html" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
+                      <a href="dokumentasi_" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                       <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
                           <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
@@ -214,7 +214,7 @@
                           <div class="coursesCard-footer">
                           <div class="coursesCard-footer__author">
                               <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
-                              <div>Admin</div>
+                              <div>{{$row->penyelenggara}}</div>
                           </div>
                           </div>
                       </div>
@@ -267,137 +267,44 @@
             
             @foreach($news as $row)
             <div data-anim-child="slide-left delay-2" class="col-lg-3 col-md-6">
-              <a href="berita.php" class=" blogCard -type-1">
+              <a href="news" class=" blogCard -type-1">
                 <div class="blogCard__image">
-                  <img src="{{asset('fotoberita/'.$row->foto_berita)}}" alt="image">
+                  <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="image">
                 </div>
                 <div class="blogCard__content">
                   <h4 class="blogCard__title">{{$row->judul_berita}}</h4>
-                  <div class="blogCard__date">{{$row->tanggal_berita}}</div>
+                  <div class="blogCard__date">{{\Carbon\Carbon::parse($row->tanggal_berita)->format('F d, Y')}}</div>
                 </div>
               </a>
             </div>
             @endforeach
     
-            {{-- <div data-anim-child="slide-left delay-3" class="col-lg-3 col-md-6">
-              <a href="blog-single.html" class="blogCard -type-1">
-                <div class="blogCard__image">
-                  <img src="{{asset('webex/img/blog/2.png')}}" alt="image">
-                </div>
-                <div class="blogCard__content">
-                  <div class="blogCard__category">DESIGN</div>
-                  <h4 class="blogCard__title">How to design a simple, yet unique and memorable brand identity</h4>
-                  <div class="blogCard__date">December 16, 2022</div>
-                </div>
-              </a>
-            </div>
-            <div data-anim-child="slide-left delay-3" class="col-lg-3 col-md-6">
-              <a href="blog-single.html" class="blogCard -type-1">
-                <div class="blogCard__image">
-                  <img src="{{asset('webex/img/blog/2.png')}}" alt="image">
-                </div>
-                <div class="blogCard__content">
-                  <div class="blogCard__category">DESIGN</div>
-                  <h4 class="blogCard__title">How to design a simple, yet unique and memorable brand identity</h4>
-                  <div class="blogCard__date">December 16, 2022</div>
-                </div>
-              </a>
-            </div>
-            <div data-anim-child="slide-left delay-3" class="col-lg-3 col-md-6">
-              <a href="blog-single.html" class="blogCard -type-1">
-                <div class="blogCard__image">
-                  <img src="{{asset('webex/img/blog/2.png')}}" alt="image">
-                </div>
-                <div class="blogCard__content">
-                  <div class="blogCard__category">DESIGN</div>
-                  <h4 class="blogCard__title">How to design a simple, yet unique and memorable brand identity</h4>
-                  <div class="blogCard__date">December 16, 2022</div>
-                </div>
-              </a>
-            </div> --}}
+            
     
 
-            {{-- <div class="col-lg-12">
+            <div class="col-lg-3">
               <div class="row y-gap-30">
     
+                @foreach ($news2 as $row)
+                    
                 <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-4" class="blogCard -type-2">
+                  <a href="news" data-anim-child="slide-left delay-4" class="blogCard -type-2">
                     <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/1.png')}}" alt="image">
+                      <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="image" >
                     </div>
                     <div class="blogCard__content">
-                      <div class="blogCard__category">COURSES</div>
-                      <h4 class="blogCard__title">Medical Chemistry: The Molecular Basis</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
+                      {{-- <div class="blogCard__category">COURSES</div> --}}
+                      <h4 class="blogCard__title">{{$row->judul_berita}}</h4>
+                      <div class="blogCard__date">{{\Carbon\Carbon::parse($row->tanggal_berita)->format('F d, Y')}}</div>
                     </div>
                   </a>
                 </div>
-    
-                <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-5" class="blogCard -type-2">
-                    <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/2.png')}}" alt="image">
-                    </div>
-                    <div class="blogCard__content">
-                      <div class="blogCard__category">DEVELOPMENT</div>
-                      <h4 class="blogCard__title">Qualification for Students’ Satisfaction Rate</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
-                    </div>
-                  </a>
-                </div>
-    
-                <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-6" class="blogCard -type-2">
-                    <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/3.png')}}" alt="image">
-                    </div>
-                    <div class="blogCard__content">
-                      <div class="blogCard__category">LIFESTYLE</div>
-                      <h4 class="blogCard__title">Simple Words about Science Complications</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-6" class="blogCard -type-2">
-                    <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/3.png')}}" alt="image">
-                    </div>
-                    <div class="blogCard__content">
-                      <div class="blogCard__category">LIFESTYLE</div>
-                      <h4 class="blogCard__title">Simple Words about Science Complications</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-6" class="blogCard -type-2">
-                    <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/3.png')}}" alt="image">
-                    </div>
-                    <div class="blogCard__content">
-                      <div class="blogCard__category">LIFESTYLE</div>
-                      <h4 class="blogCard__title">Simple Words about Science Complications</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                  <a href="#" data-anim-child="slide-left delay-6" class="blogCard -type-2">
-                    <div class="blogCard__image">
-                      <img src="{{asset('webex/img/blog/small/3.png')}}" alt="image">
-                    </div>
-                    <div class="blogCard__content">
-                      <div class="blogCard__category">LIFESTYLE</div>
-                      <h4 class="blogCard__title">Simple Words about Science Complications</h4>
-                      <div class="blogCard__date">December 16, 2022</div>
-                    </div>
-                  </a>
-                </div>
+             
+                @endforeach
 
     
               </div>
-            </div> --}}
+            </div>
             
           </div>
         </div>

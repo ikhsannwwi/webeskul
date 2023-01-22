@@ -14,7 +14,7 @@ class beritaController extends Controller
         if($request->has('search')){
             $data = berita::where('judul_berita','like', '%' .$request->search. '%')->paginate(5);
         }else{
-            $data = berita::paginate(5);
+            $data = berita::orderBy('id', 'DESC')->paginate(5);
         }
         // dd($data);
         return view('admin.news.berita', compact('data')) ;

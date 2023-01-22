@@ -15,7 +15,7 @@ class dokumentasiController extends Controller
             $data = dokumentasi::where('nama_kegiatan','like', '%' .$request->search. '%')->paginate(5);
             $data = dokumentasi::orWhere('penyelenggara','like', '%' .$request->search. '%')->paginate(5);
         }else{
-            $data = dokumentasi::latest()->paginate(5);
+            $data = dokumentasi::orderBy('id', 'DESC')->paginate(5);
         }
         // dd($data);
         return view('admin.dok.dokumentasi', compact('data')) ;

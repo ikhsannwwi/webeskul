@@ -143,21 +143,7 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
 
 
 
-    //tentangweb
-    Route::get('/tentangweb', [tentangwebController::class, 'index','anggota'])->name('tentangweb')->middleware('auth');
-    Route::get('/tentanganggota', [tentangwebController::class, 'anggota'])->name('tentanganggota')->middleware('auth');
-    Route::post('/insertdatatentangweb', [tentangwebController::class, 'insertdatatentangweb'])->name('insertdatatentangweb');
-    Route::post('/insertdatatentanganggota', [tentangwebController::class, 'insertdatatentanganggota'])->name('insertdatatentanganggota');
-
-    Route::get('/edittentangweb/{id}', [tentangwebController::class, 'edittentangweb'])->name('edittentangweb{id}')->middleware('auth');
-    Route::get('/edittentanganggota/{id}', [tentangwebController::class, 'edittentanganggota'])->name('edittentanganggota{id}')->middleware('auth');
-    Route::post('/updatetentangweb/{id}', [tentangwebController::class, 'updatetentangweb'])->name('updatetentangweb');
-    Route::post('/updatetentanganggota/{id}', [tentangwebController::class, 'updatetentanganggota'])->name('updatetentanganggota');
-
-    Route::get('/deletetentangweb/{id}', [tentangwebController::class, 'deletetentangweb'])->name('deletetentangweb');
-    Route::get('/deletetentanganggota/{id}', [tentangwebController::class, 'deletetentanganggota'])->name('deletetentanganggota');
-
-
+    
 
 
 // });

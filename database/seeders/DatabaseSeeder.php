@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'root',
             'email' => 'root@root',
             'password' => bcrypt('root'),
-            'foto' => '1.png',
+            'foto' => 'root.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminmpk',
             'email' => 'mpk@smknegeri1garut.sch.id',
             'password' => bcrypt('adminmpk'),
-            'foto' => '1.png',
+            'foto' => 'mpk.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminosis',
             'email' => 'osis@smknegeri1garut.sch.id',
             'password' => bcrypt('adminosis'),
-            'foto' => '1.png',
+            'foto' => 'osis.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminirma',
             'email' => 'irma@smknegeri1garut.sch.id',
             'password' => bcrypt('adminirma'),
-            'foto' => '1.png',
+            'foto' => 'irma.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpks',
             'email' => 'pks@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpks'),
-            'foto' => '1.png',
+            'foto' => 'pks.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpramukaputra',
             'email' => 'pramukaputra@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpramukaputra'),
-            'foto' => '1.png',
+            'foto' => 'pramukaputra.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpramukaputri',
             'email' => 'pramukaputri@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpramukaputri'),
-            'foto' => '1.png',
+            'foto' => 'pramukaputri.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -86,7 +86,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpaskibra',
             'email' => 'paskibra@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpaskibra'),
-            'foto' => '1.png',
+            'foto' => 'paskibra.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -94,7 +94,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminvolly',
             'email' => 'volly@smknegeri1garut.sch.id',
             'password' => bcrypt('adminvolly'),
-            'foto' => '1.png',
+            'foto' => 'volly.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -102,7 +102,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminfutsalputra',
             'email' => 'futsalputra@smknegeri1garut.sch.id',
             'password' => bcrypt('adminfutsalputra'),
-            'foto' => '1.png',
+            'foto' => 'futsalputra.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminfutsalputri',
             'email' => 'futsalputri@smknegeri1garut.sch.id',
             'password' => bcrypt('adminfutsalputri'),
-            'foto' => '1.png',
+            'foto' => 'futsalputri.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -118,7 +118,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminsepakbola',
             'email' => 'sepakbola@smknegeri1garut.sch.id',
             'password' => bcrypt('adminsepakbola'),
-            'foto' => '1.png',
+            'foto' => 'sepakbola.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -126,7 +126,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminbasket',
             'email' => 'basket@smknegeri1garut.sch.id',
             'password' => bcrypt('adminbasket'),
-            'foto' => '1.png',
+            'foto' => 'basket.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -134,7 +134,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminhockey',
             'email' => 'hockey@smknegeri1garut.sch.id',
             'password' => bcrypt('adminhockey'),
-            'foto' => '1.png',
+            'foto' => 'hockey.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -142,7 +142,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminbadminton',
             'email' => 'badminton@smknegeri1garut.sch.id',
             'password' => bcrypt('adminbadminton'),
-            'foto' => '1.png',
+            'foto' => 'badminton.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -150,7 +150,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminkarate',
             'email' => 'karate@smknegeri1garut.sch.id',
             'password' => bcrypt('adminkarate'),
-            'foto' => '1.png',
+            'foto' => 'karate.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -158,7 +158,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admintaekwondo',
             'email' => 'taekwondo@smknegeri1garut.sch.id',
             'password' => bcrypt('admintaekwondo'),
-            'foto' => '1.png',
+            'foto' => 'taekwondo.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -166,7 +166,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminsilat',
             'email' => 'silat@smknegeri1garut.sch.id',
             'password' => bcrypt('adminsilat'),
-            'foto' => '1.png',
+            'foto' => 'silat.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -174,7 +174,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admintarungderajat',
             'email' => 'tarungderajat@smknegeri1garut.sch.id',
             'password' => bcrypt('admintarungderajat'),
-            'foto' => '1.png',
+            'foto' => 'tarungderajat.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -182,7 +182,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminkir',
             'email' => 'kir@smknegeri1garut.sch.id',
             'password' => bcrypt('adminkir'),
-            'foto' => '1.png',
+            'foto' => 'kir.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -190,7 +190,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminkopsis',
             'email' => 'kopsis@smknegeri1garut.sch.id',
             'password' => bcrypt('adminkopsis'),
-            'foto' => '1.png',
+            'foto' => 'kopsis.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -198,7 +198,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpmr',
             'email' => 'pmr@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpmr'),
-            'foto' => '1.png',
+            'foto' => 'pmr.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -206,7 +206,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminsenitari',
             'email' => 'senitari@smknegeri1garut.sch.id',
             'password' => bcrypt('adminsenitari'),
-            'foto' => '1.png',
+            'foto' => 'senitari.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -214,7 +214,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminmarchingband',
             'email' => 'marchingband@smknegeri1garut.sch.id',
             'password' => bcrypt('adminmarchingband'),
-            'foto' => '1.png',
+            'foto' => 'marchingband.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -222,7 +222,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminsenikriya',
             'email' => 'senikriya@smknegeri1garut.sch.id',
             'password' => bcrypt('adminsenikriya'),
-            'foto' => '1.png',
+            'foto' => 'senikriya.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -230,7 +230,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminpaduansuara',
             'email' => 'paduansuara@smknegeri1garut.sch.id',
             'password' => bcrypt('adminpaduansuara'),
-            'foto' => '1.png',
+            'foto' => 'paduansuara.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -238,7 +238,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminkarawitan',
             'email' => 'karawitan@smknegeri1garut.sch.id',
             'password' => bcrypt('adminkarawitan'),
-            'foto' => '1.png',
+            'foto' => 'karawitan.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -246,7 +246,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminteater',
             'email' => 'teater@smknegeri1garut.sch.id',
             'password' => bcrypt('adminteater'),
-            'foto' => '1.png',
+            'foto' => 'teater.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -254,7 +254,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminsenimusik',
             'email' => 'senimusik@smknegeri1garut.sch.id',
             'password' => bcrypt('adminsenimusik'),
-            'foto' => '1.png',
+            'foto' => 'senimusik.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -262,7 +262,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminitclub',
             'email' => 'itclub@smknegeri1garut.sch.id',
             'password' => bcrypt('adminitclub'),
-            'foto' => '1.png',
+            'foto' => 'itclub.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -270,7 +270,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminbroadcast',
             'email' => 'broadcast@smknegeri1garut.sch.id',
             'password' => bcrypt('adminbroadcast'),
-            'foto' => '1.png',
+            'foto' => 'broadcast.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -278,7 +278,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminenglishclub',
             'email' => 'englishclub@smknegeri1garut.sch.id',
             'password' => bcrypt('adminenglishclub'),
-            'foto' => '1.png',
+            'foto' => 'englishclub.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -286,7 +286,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminkoreanclub',
             'email' => 'koreanclub@smknegeri1garut.sch.id',
             'password' => bcrypt('adminkoreanclub'),
-            'foto' => '1.png',
+            'foto' => 'koreanclub.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -294,7 +294,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'adminjapanclub',
             'email' => 'japanclub@smknegeri1garut.sch.id',
             'password' => bcrypt('adminjapanclub'),
-            'foto' => '1.png',
+            'foto' => 'japanclub.png',
             'remember_token' => Str::random(60),
         ]);
         User::create([
@@ -302,7 +302,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admindeutschclub',
             'email' => 'deutschclub@smknegeri1garut.sch.id',
             'password' => bcrypt('admindeutschclub'),
-            'foto' => '1.png',
+            'foto' => 'deutsch.png',
             'remember_token' => Str::random(60),
         ]);
 
@@ -425,14 +425,14 @@ class DatabaseSeeder extends Seeder
 
         kepsek::create([
             'nama_kepsek' => 'Bejo Siswoyo S.Pd',
-            'foto_kepsek' => Str::random(5).'.png',
+            'foto_kepsek' => 'pak-bejo.png',
             'pembuka_sambutan' => Str::random(15),
             'isi_sambutan' => Str::random(25).'<br>'.Str::random(90).'<br>'.Str::random(50),
             'penutup_sambutan' => Str::random(20),
         ]);
         wakasek::create([
             'nama_wakasek' => 'Nurdin Ruslih S.Pd',
-            'foto_wakasek' => Str::random(5).'.png',
+            'foto_wakasek' => 'pak-nurdin.png',
             'pembuka_sambutan' => '<p>'.Str::random(15).'</p>',
             'isi_sambutan' => '<p>'.Str::random(25).'</p>'.'<p>'.Str::random(90).'</p>'.'<p>'.Str::random(50).'</p>',
             'penutup_sambutan' => '<p>'.Str::random(20).'</p>',
@@ -448,7 +448,7 @@ class DatabaseSeeder extends Seeder
             'id' => 1,
             'nama_eskul' => 'Majelis Permusyawaratan Kelas',
             'slug' => 'mpk1',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'mpk.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -462,7 +462,7 @@ class DatabaseSeeder extends Seeder
             'id' => 2,
             'nama_eskul' => 'OSIS',
             'slug' => 'osis2',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'osis.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -476,7 +476,7 @@ class DatabaseSeeder extends Seeder
             'id' => 3,
             'nama_eskul' => 'IRMA',
             'slug' => 'irma3',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'irma.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -490,7 +490,7 @@ class DatabaseSeeder extends Seeder
             'id' => 4,
             'nama_eskul' => 'Patroli Keamanan Sekolah',
             'slug' => 'pks4',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'pks.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -504,7 +504,7 @@ class DatabaseSeeder extends Seeder
             'id' => 5,
             'nama_eskul' => 'Pramuka Putra',
             'slug' => 'pramukaputra5',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'pramukaputra.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -518,7 +518,7 @@ class DatabaseSeeder extends Seeder
             'id' => 6,
             'nama_eskul' => 'Pramuka Putri',
             'slug' => 'pramukaputri6',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'pramukaputri.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -532,7 +532,7 @@ class DatabaseSeeder extends Seeder
             'id' => 7,
             'nama_eskul' => 'Paskibra',
             'slug' => 'paskibra7',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'paskibra.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -546,7 +546,7 @@ class DatabaseSeeder extends Seeder
             'id' => 8,
             'nama_eskul' => 'Volly',
             'slug' => 'volly8',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'volly.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -560,7 +560,7 @@ class DatabaseSeeder extends Seeder
             'id' => 9,
             'nama_eskul' => 'Futsal Putra',
             'slug' => 'futsalputra9',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'futsalputra.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -574,7 +574,7 @@ class DatabaseSeeder extends Seeder
             'id' => 10,
             'nama_eskul' => 'Futsal Putri',
             'slug' => 'futsalputri10',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'futsalputri.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -588,7 +588,7 @@ class DatabaseSeeder extends Seeder
             'id' => 11,
             'nama_eskul' => 'Sepak Bola',
             'slug' => 'sepakbola11',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'sepakbola.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -602,7 +602,7 @@ class DatabaseSeeder extends Seeder
             'id' => 12,
             'nama_eskul' => 'Basket',
             'slug' => 'basket12',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'basket.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -616,7 +616,7 @@ class DatabaseSeeder extends Seeder
             'id' => 13,
             'nama_eskul' => 'Hockey',
             'slug' => 'hockey13',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'hockey.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -630,7 +630,7 @@ class DatabaseSeeder extends Seeder
             'id' => 14,
             'nama_eskul' => 'Badminton',
             'slug' => 'badminton14',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'badminton.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -644,7 +644,7 @@ class DatabaseSeeder extends Seeder
             'id' => 15,
             'nama_eskul' => 'Karate',
             'slug' => 'karate15',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'karate.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -658,7 +658,7 @@ class DatabaseSeeder extends Seeder
             'id' => 16,
             'nama_eskul' => 'Taekwondo',
             'slug' => 'taekwondo16',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'taekwondo.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -672,7 +672,7 @@ class DatabaseSeeder extends Seeder
             'id' => 17,
             'nama_eskul' => 'Silat',
             'slug' => 'silat17',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'silat.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -686,7 +686,7 @@ class DatabaseSeeder extends Seeder
             'id' => 18,
             'nama_eskul' => 'Tarung Derajat',
             'slug' => 'tarungderajat18',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'tarungderajat.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -700,7 +700,7 @@ class DatabaseSeeder extends Seeder
             'id' => 19,
             'nama_eskul' => 'Karya Ilmiah Remaja',
             'slug' => 'kir19',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'kir.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -714,7 +714,7 @@ class DatabaseSeeder extends Seeder
             'id' => 20,
             'nama_eskul' => 'Koperasi Siswa',
             'slug' => 'kopsis20',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'kopsis.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -728,7 +728,7 @@ class DatabaseSeeder extends Seeder
             'id' => 21,
             'nama_eskul' => 'Palang Merah Remaja',
             'slug' => 'pmr21',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'pmr.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -742,7 +742,7 @@ class DatabaseSeeder extends Seeder
             'id' =>22,
             'nama_eskul' => 'Seni Tari',
             'slug' => 'senitari22',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'senitari.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -756,7 +756,7 @@ class DatabaseSeeder extends Seeder
             'id' => 23,
             'nama_eskul' => 'Marching Band',
             'slug' => 'marchingband23',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'marchingband.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -770,7 +770,7 @@ class DatabaseSeeder extends Seeder
             'id' => 24,
             'nama_eskul' => 'Seni Kriya',
             'slug' => 'senikriya24',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'senikriya.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -784,7 +784,7 @@ class DatabaseSeeder extends Seeder
             'id' => 25,
             'nama_eskul' => 'Paduan Suara',
             'slug' => 'paduansuara25',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'paduansuara.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -798,7 +798,7 @@ class DatabaseSeeder extends Seeder
             'id' => 26,
             'nama_eskul' => 'Karawitan',
             'slug' => 'karawitan26',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'karawitan.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -812,7 +812,7 @@ class DatabaseSeeder extends Seeder
             'id' => 27,
             'nama_eskul' => 'Teater',
             'slug' => 'teater27',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'teater.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -826,7 +826,7 @@ class DatabaseSeeder extends Seeder
             'id' => 28,
             'nama_eskul' => 'Seni Musik',
             'slug' => 'senimusik28',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'senimusik.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -840,7 +840,7 @@ class DatabaseSeeder extends Seeder
             'id' => 29,
             'nama_eskul' => 'IT Club',
             'slug' => 'itclub29',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'itclub.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -854,7 +854,7 @@ class DatabaseSeeder extends Seeder
             'id' => 30,
             'nama_eskul' => 'Broadcast',
             'slug' => 'broadcast30',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'broadcast.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -868,7 +868,7 @@ class DatabaseSeeder extends Seeder
             'id' => 31,
             'nama_eskul' => 'English Club',
             'slug' => 'englishclub31',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'englishclub.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -882,7 +882,7 @@ class DatabaseSeeder extends Seeder
             'id' => 32,
             'nama_eskul' => 'Korean Club',
             'slug' => 'koreanclub32',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'koreanclub.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -896,7 +896,7 @@ class DatabaseSeeder extends Seeder
             'id' => 33,
             'nama_eskul' => 'Japan Club',
             'slug' => 'japanclub33',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'japanclub.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -910,7 +910,7 @@ class DatabaseSeeder extends Seeder
             'id' => 34,
             'nama_eskul' => 'Deutsch Club',
             'slug' => 'deutschclub34',
-            'logo' => Str::random(7).'.png',
+            'logo' => 'deutschclub.png',
             'pembina' => Str::random(7),
             'ketua' => Str::random(7),
             'wakilketua' => Str::random(7),
@@ -943,39 +943,39 @@ class DatabaseSeeder extends Seeder
 
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'osis.png',
+            'penyelenggara' => 'Osis',
+            'foto_kegiatan' => '1.jpg',
         ]);
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'itclub.png',
+            'penyelenggara' => 'IT-Club',
+            'foto_kegiatan' => '2.jpg',
         ]);
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'mpk.png',
+            'penyelenggara' => 'MPK',
+            'foto_kegiatan' => '3.jpg',
         ]);
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'sepakbola.png',
+            'penyelenggara' => 'Sepak Bola',
+            'foto_kegiatan' => '4.jpg',
         ]);
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'pramukaputra.png',
+            'penyelenggara' => 'Pramuka',
+            'foto_kegiatan' => '5.jpg',
         ]);
         dokumentasi::create([
             'nama_kegiatan' => Str::random(10),
-            'logo' => Str::random(5).'.png',
-            'penyelenggara' => Str::random(7),
-            'foto_kegiatan' => Str::random(5).'.png',
+            'logo' => 'marchingband.png',
+            'penyelenggara' => 'Marching Band',
+            'foto_kegiatan' => '6.jpg',
         ]);
 
 
@@ -988,42 +988,42 @@ class DatabaseSeeder extends Seeder
 
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '1.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '2.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '3.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '4.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '5.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '6.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '7.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
-            'foto_berita' => Str::random(10).'.png',
+            'foto_berita' => '8.jpg',
             'tanggal_berita' => '2022-11-11'
         ]);
     }

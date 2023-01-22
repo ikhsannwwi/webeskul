@@ -149,22 +149,7 @@
                 </p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="/tentangweb" class="nav-link {{request()->is('tentangweb') ? 'active' : ''}}">
-                <i class="nav-icon fas fa-th"></i>
-                <p>
-                  tentang web
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/tentanganggota" class="nav-link {{request()->is('tentanganggota') ? 'active' : ''}}">
-                <i class="nav-icon fas fa-th"></i>
-                <p>
-                  tentang anggota
-                </p>
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a href="/users" class="nav-link {{request()->is('users') ? 'active' : ''}}">
                 <i class="nav-icon fas fa-th"></i>

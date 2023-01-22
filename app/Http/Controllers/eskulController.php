@@ -161,11 +161,12 @@ class eskulController extends Controller
 
         $data = eskul::all();
 
-        $dok = dokumentasi::all();
+        $dok = dokumentasi::inRandomOrder()->get();
 
-        $news = berita::all();
+        $news = berita::inRandomOrder()->limit(3)->get();
+        $news2 = berita::inRandomOrder()->limit(5)->get();
         // dd($data);
-        return view('welcome', compact('data', 'dok', 'news')) ;
+        return view('welcome', compact('data', 'dok', 'news','news2')) ;
     }
 
     public function insertdataeskul(Request $request){
