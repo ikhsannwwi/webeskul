@@ -102,6 +102,12 @@
               <p class="teamCard__text">Full Stack Develover</p>
 
             </div>
+            <div class="teamCard-footer">
+              <div class="teamCard-footer__author">
+                <img src="{{asset('images/logo-eskul/itclub.png')}}" alt="Pengembang">
+                <div>Paskibra</div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -123,6 +129,12 @@
               <p class="teamCard__text">Full Stack Develover</p>
 
             </div>
+            <div class="teamCard-footer">
+              <div class="teamCard-footer__author">
+                <img src="{{asset('images/logo-eskul/itclub.png')}}" alt="Pengembang">
+                <div>IT-Club</div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -144,6 +156,12 @@
               <p class="teamCard__text">Full Stack Develover</p>
 
             </div>
+            <div class="teamCard-footer">
+              <div class="teamCard-footer__author">
+                <img src="{{asset('images/logo-eskul/itclub.png')}}" alt="Pengembang">
+                <div>IT-Club</div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -164,6 +182,12 @@
               <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
               <p class="teamCard__text">Full Stack Develover</p>
 
+            </div>
+            <div class="teamCard-footer">
+              <div class="teamCard-footer__author">
+                <img src="{{asset('images/logo-eskul/itclub.png')}}" alt="Pengembang">
+                <div>IT-Club</div>
+              </div>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ class dokumentasiController extends Controller
 
     public function dokumentasi(){
 
-        $data = dokumentasi::paginate(50);
+        $data = dokumentasi::orderBy('id','DESC')->paginate(12);
         // dd($data);
         return view('layout.subnav.dokumentasi', compact('data')) ;
     }

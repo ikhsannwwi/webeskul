@@ -66,11 +66,11 @@
                 
     
                 <div class="explore__item">
-                  <a href="mpk1" class="text-dark-1 ">MPK</a>
+                  <a href="/mpk1" class="text-dark-1 ">MPK</a>
                 </div>
     
                 <div class="explore__item">
-                  <a href="osis2" class="text-dark-1 ">OSIS</a>
+                  <a href="/osis2" class="text-dark-1 ">OSIS</a>
                 </div>
     
                 <div class="explore__item">
@@ -78,7 +78,7 @@
                     Sekbid 1<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="irma3">IRMA</a>
+                    <a class="text-dark-1 " href="/irma3">IRMA</a>
                   </div>
                 </div>
     
@@ -87,7 +87,7 @@
                     Sekbid 2<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="pks4">PKS</a>
+                    <a class="text-dark-1 " href="/pks4">PKS</a>
                   </div>
                 </div>
     
@@ -96,9 +96,9 @@
                     Sekbid 3<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="pramuka-putra5">PRAMUKA PUTRA</a>
-                    <a class="text-dark-1 " href="pramuka-putri6">PRAMUKA PUTRI</a>
-                    <a class="text-dark-1 " href="paskibra7">PASKIBRA</a>
+                    <a class="text-dark-1 " href="/pramuka-putra5">PRAMUKA PUTRA</a>
+                    <a class="text-dark-1 " href="/pramuka-putri6">PRAMUKA PUTRI</a>
+                    <a class="text-dark-1 " href="/paskibra7">PASKIBRA</a>
                   </div>
                 </div>
     
@@ -107,17 +107,17 @@
                     Sekbid 4<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="volly8">VOLLY</a>
-                    <a class="text-dark-1 " href="futsal-putra9">FUTSAL PUTRA</a>
-                    <a class="text-dark-1 " href="futsal-putri10">FUTSAL PUTRI</a>
-                    <a class="text-dark-1 " href="sepakbola35">SEPAK BOLA</a>
-                    <a class="text-dark-1 " href="basket12">BASKET</a>
-                    <a class="text-dark-1 " href="hockey13">HOCKEY</a>
-                    <a class="text-dark-1 " href="badminton14">BADMINTON</a>
-                    <a class="text-dark-1 " href="karate15">KARATE</a>
-                    <a class="text-dark-1 " href="taekwondo16">TAEKWONDO</a>
-                    <a class="text-dark-1 " href="silat17">SILAT</a>
-                    <a class="text-dark-1 " href="tarung-derajat18">TARUNG DERAJAT</a>
+                    <a class="text-dark-1 " href="/volly8">VOLLY</a>
+                    <a class="text-dark-1 " href="/futsal-putra9">FUTSAL PUTRA</a>
+                    <a class="text-dark-1 " href="/futsal-putri10">FUTSAL PUTRI</a>
+                    <a class="text-dark-1 " href="/sepakbola35">SEPAK BOLA</a>
+                    <a class="text-dark-1 " href="/basket12">BASKET</a>
+                    <a class="text-dark-1 " href="/hockey13">HOCKEY</a>
+                    <a class="text-dark-1 " href="/badminton14">BADMINTON</a>
+                    <a class="text-dark-1 " href="/karate15">KARATE</a>
+                    <a class="text-dark-1 " href="/taekwondo16">TAEKWONDO</a>
+                    <a class="text-dark-1 " href="/silat17">SILAT</a>
+                    <a class="text-dark-1 " href="/tarung-derajat18">TARUNG DERAJAT</a>
                   </div>
                 </div>
     
@@ -126,7 +126,7 @@
                     Sekbid 5<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="kir19">KIR</a>
+                    <a class="text-dark-1 " href="/kir19">KIR</a>
                   </div>
                 </div>
     
@@ -135,7 +135,7 @@
                     Sekbid 6<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="kopsis20">KOPSIS</a>
+                    <a class="text-dark-1 " href="/kopsis20">KOPSIS</a>
                   </div>
                 </div>
     
@@ -144,7 +144,7 @@
                     Sekbid 7<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="pmr21">PMR</a>
+                    <a class="text-dark-1 " href="/pmr21">PMR</a>
                   </div>
                 </div>
     
@@ -153,13 +153,13 @@
                     Sekbid 8<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="seni-tari22">SENI TARI</a>
-                    <a class="text-dark-1 " href="marching-band23">MARCHING BAND</a>
-                    <a class="text-dark-1 " href="seni-kriya24">SENI KRIYA</a>
-                    <a class="text-dark-1 " href="paduan-suara25">PADUAN SUARA</a>
-                    <a class="text-dark-1 " href="karawitan26">KARAWITAN</a>
-                    <a class="text-dark-1 " href="teater27">TEATER</a>
-                    <a class="text-dark-1 " href="seni-musik28">SENI MUSIK</a>
+                    <a class="text-dark-1 " href="/seni-tari22">SENI TARI</a>
+                    <a class="text-dark-1 " href="/marching-band23">MARCHING BAND</a>
+                    <a class="text-dark-1 " href="/seni-kriya24">SENI KRIYA</a>
+                    <a class="text-dark-1 " href="/paduan-suara25">PADUAN SUARA</a>
+                    <a class="text-dark-1 " href="/karawitan26">KARAWITAN</a>
+                    <a class="text-dark-1 " href="/teater27">TEATER</a>
+                    <a class="text-dark-1 " href="/seni-musik28">SENI MUSIK</a>
                   </div>
                 </div>
     
@@ -168,8 +168,8 @@
                     Sekbid 9<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="it-club29">IT-CLUB</a>
-                    <a class="text-dark-1 " href="broadcast30">BROADCAST</a>
+                    <a class="text-dark-1 " href="/it-club29">IT-CLUB</a>
+                    <a class="text-dark-1 " href="/broadcast30">BROADCAST</a>
                   </div>
                 </div>
     
@@ -178,10 +178,10 @@
                     Sekbid 10<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="english-club31">ENGLISH CLUB</a>
-                    <a class="text-dark-1 " href="korean-club32">KOREAN CLUB</a>
-                    <a class="text-dark-1 " href="japan-club33">JAPAN CLUB</a>
-                    <a class="text-dark-1 " href="deutsch-club34">DEUTSCH CLUB</a>
+                    <a class="text-dark-1 " href="/english-club31">ENGLISH CLUB</a>
+                    <a class="text-dark-1 " href="/korean-club32">KOREAN CLUB</a>
+                    <a class="text-dark-1 " href="/japan-club33">JAPAN CLUB</a>
+                    <a class="text-dark-1 " href="/deutsch-club34">DEUTSCH CLUB</a>
                   </div>
                 </div>
     
@@ -204,27 +204,27 @@
                       <a data-barba  href="#">Tentang Kami <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
                       <ul class="subnav dropdown-menu martoppp" >
     
-                        <li><a class=" dropdown-item" href="kepala-sekolah">Sambutan Kepala Sekolah</a></li>
+                        <li><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
     
-                        <li><a class=" dropdown-item" href="wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
+                        <li><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
     
-                        <li><a class=" dropdown-item" href="visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
+                        <li><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
     
-                        <li><a class=" dropdown-item" href="tentang-web-ini">Tentang Web Ini</a></li>
+                        <li><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
     
                       </ul>
                     </li>
     
                     <li>
-                      <a class="" data-barba href="dokumentasi_">Dokumentasi</a>
+                      <a class="" data-barba href="/dokumentasi_">Dokumentasi</a>
                     </li>
     
                     <li>
-                      <a class="" data-barba href="news">Berita</a>
+                      <a class="" data-barba href="/news">Berita</a>
                     </li>
     
                     <li>
-                      <a class="" data-barba href="contact-person">Hubungi Kami</a>
+                      <a class="" data-barba href="/contact-person">Hubungi Kami</a>
                     </li>
                   </ul>
                 </div>
@@ -320,7 +320,7 @@
 
                 <a class="" href="#"><i class="text-14 fa fa-twitter"></i></a>
 
-                <a class="" href="https://www.instagram.com/smkn1garut_official/"><i class="text-14 fa fa-instagram"></i></a>
+                <a class="" href="/https://www.instagram.com/smkn1garut_official/"><i class="text-14 fa fa-instagram"></i></a>
 
               </div>
             </div>

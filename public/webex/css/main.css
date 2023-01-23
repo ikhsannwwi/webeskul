@@ -6351,6 +6351,47 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
+.teamCard.-type-1 .teamCard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #EDEDED;
+}
+
+.teamCard.-type-1 .teamCard-footer__author {
+  display: flex;
+  align-items: center;
+}
+
+.teamCard.-type-1 .teamCard-footer__author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.teamCard.-type-1 .teamCard-footer__author div {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-light-1);
+}
+
+.teamCard.-type-1 .teamCard-footer__price {
+  display: flex;
+  align-items: center;
+}
+
+.teamCard.-type-1 .teamCard-footer__price > div:nth-child(1) {
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 500;
+  margin-right: 10px;
+  color: var(--color-light-1);
+  text-decoration: line-through;
+}
 
 .teamCard.-type-2 {
   box-shadow: 0px 6px 15px 0px #404F680D;
@@ -6792,6 +6833,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 40px;
 }
 
+.pagination.-buttons .pagination__button .disabled {
+  pointer-events: none;
+  color: #777;
+  background-color: #777;
+}
 .pagination.-buttons .pagination__button {
   display: flex;
   align-items: center;
@@ -6803,6 +6849,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-purple-1);
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 
 .pagination.-buttons .pagination__button .icon {
   font-size: 12px;

@@ -120,7 +120,7 @@
 
                     @foreach ($data as $row)
                   <div class="swiper-slide h-100">
-                    <a class="" href="{{$row->slug}}">
+                    <a class="" href="/{{$row->slug}}">
                       <div data-anim-child="slide-left delay-2" class="infoCard -type-1">
                           <div class="infoCard__image">
                             <img style="width: 100px; height: 99px;" src="{{asset('images/logo-eskul/'.$row->logo)}}" alt="{{$row->logo}}">
@@ -186,7 +186,7 @@
                   <div class="swiper-slide">
                   <div data-anim-child="slide-up delay-1">
   
-                      <a href="dokumentasi_" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
+                      <a href="/dokumentasi_" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                       <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
                           <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
@@ -264,10 +264,10 @@
 
     
           <div class="row y-gap-30 pt-50">
-            
-            @foreach($news as $row)
-            <div data-anim-child="slide-left delay-2" class="col-lg-3 col-md-6">
-              <a href="news" class=" blogCard -type-1">
+
+            @foreach($news1 as $row)
+            <div data-anim-child="slide-left delay-2" class="col-lg-9 col-md-6">
+              <a href="/news/{{$row->slug_berita}}" class=" blogCard -type-1">
                 <div class="blogCard__image">
                   <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="image">
                 </div>
@@ -278,6 +278,22 @@
               </a>
             </div>
             @endforeach
+            
+            {{-- @foreach($news as $row)
+            <div data-anim-child="slide-left delay-2" class="col-lg-3 col-md-6">
+              <a href="/news/{{$row->slug_berita}}" class=" blogCard -type-1">
+                <div class="blogCard__image">
+                  <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="image">
+                </div>
+                <div class="blogCard__content">
+                  <h4 class="blogCard__title">{{$row->judul_berita}}</h4>
+                  <div class="blogCard__date">{{\Carbon\Carbon::parse($row->tanggal_berita)->format('F d, Y')}}</div>
+                </div>
+              </a>
+            </div>
+            @endforeach --}}
+
+            
     
             
     
@@ -288,7 +304,7 @@
                 @foreach ($news2 as $row)
                     
                 <div class="col-lg-12 col-md-6">
-                  <a href="news" data-anim-child="slide-left delay-4" class="blogCard -type-2">
+                  <a href="/news/{{$row->slug_berita}}" data-anim-child="slide-left delay-4" class="blogCard -type-2">
                     <div class="blogCard__image">
                       <img src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="image" >
                     </div>

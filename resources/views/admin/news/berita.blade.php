@@ -147,6 +147,8 @@
                     <input required type="date" class="form-control" name="tanggal_berita" id="exampleInputPassword1" placeholder="Masukan Tanggal Berita">
                   </div>
                   
+
+                  
                 </div>
                 <!-- /.card-body -->
 

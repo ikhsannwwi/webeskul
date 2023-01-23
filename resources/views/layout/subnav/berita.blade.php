@@ -63,13 +63,13 @@
 
                   @foreach($data as $row)
                   <div data-anim-child="slide-up delay-4" class="col-lg-4 col-md-6">
-                    <a href="blog-single.html" class="blogCard -type-1 texttt">
+                    <a href="news/{{$row->slug_berita}}" class="blogCard -type-1 texttt">
                       <div class="blogCard__image">
-                        <img class="w-1/1 rounded-8" src="{{asset('fotoberita/'.$row->foto_berita)}}" alt="{{$row->foto_berita}}">
+                        <img class="w-1/1 rounded-8" src="{{asset('images/foto-berita/'.$row->foto_berita)}}" alt="{{$row->foto_berita}}">
                       </div>
                       <div class="blogCard__content mt-20">
                         <h4 class="blogCard__title text-20 lh-15 fw-500 mt-5">{{$row->judul_berita}}</h4>
-                        <div class="blogCard__date text-14 mt-5">{{$row->tanggal_berita}}</div>
+                        <div class="blogCard__date text-14 mt-5">{{\Carbon\Carbon::parse($row->tanggal_berita)->format('F d, Y')}}</div>
                       </div>
                     </a>
                   </div>
@@ -77,26 +77,8 @@
 
                   
 
-                <div class="row justify-center pt-60 lg:pt-40">
-                  <div class="col-auto">
-                    <div class="pagination -buttons">
-                      <button class="pagination__button -prev">
-                        <i class="icon icon-chevron-left"></i>
-                      </button>
-
-                      <div class="pagination__count">
-                        <a href="#">1</a>
-                        <a class="-count-is-active" href="#">2</a>
-                        <a href="#">3</a>
-                        <span>...</span>
-                        <a href="#">67</a>
-                      </div>
-
-                      <button class="pagination__button -next">
-                        <i class="icon icon-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
+                <div class="row">
+                  {{$data->links('layout.subnav.pagination.links')}}
                 </div>
               </div>
 

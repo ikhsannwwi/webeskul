@@ -942,40 +942,46 @@ class DatabaseSeeder extends Seeder
 
 
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Paturay Tineung',
             'logo' => 'osis.png',
             'penyelenggara' => 'Osis',
             'foto_kegiatan' => '1.jpg',
+            'slug_dokumentasi' => Str::slug('Paturay Tineung'),
         ]);
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Lomba LKS',
             'logo' => 'itclub.png',
             'penyelenggara' => 'IT-Club',
             'foto_kegiatan' => '2.jpg',
+            'slug_dokumentasi' => Str::slug('Lomba LKS'),
         ]);
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Rapat Plane-off',
             'logo' => 'mpk.png',
             'penyelenggara' => 'MPK',
             'foto_kegiatan' => '3.jpg',
+            'slug_dokumentasi' => Str::slug('Rapat Plane-off'),
         ]);
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Kejuaraan Sepak Bola Bupati',
             'logo' => 'sepakbola.png',
             'penyelenggara' => 'Sepak Bola',
             'foto_kegiatan' => '4.jpg',
+            'slug_dokumentasi' => Str::slug('Kejuaraan Sepak Bola Bupati'),
         ]);
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Memperingati hari Pramuka',
             'logo' => 'pramukaputra.png',
             'penyelenggara' => 'Pramuka',
             'foto_kegiatan' => '5.jpg',
+            'slug_dokumentasi' => Str::slug('Memperingati hari Pramuka'),
         ]);
         dokumentasi::create([
-            'nama_kegiatan' => Str::random(10),
+            'nama_kegiatan' => 'Penyambutan Kepala Sekolah',
             'logo' => 'marchingband.png',
             'penyelenggara' => 'Marching Band',
             'foto_kegiatan' => '6.jpg',
+            'slug_dokumentasi' => Str::slug('Penyambutan Kepala Sekolah'),
         ]);
 
 
@@ -989,41 +995,49 @@ class DatabaseSeeder extends Seeder
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '1.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '2.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '3.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '4.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '5.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '6.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '7.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
         berita::create([
             'judul_berita' => Str::random(10),
             'foto_berita' => '8.jpg',
+            'slug_berita' => Str::slug(Str::random(7).' '. Str::random(5)),
             'tanggal_berita' => '2022-11-11'
         ]);
     }

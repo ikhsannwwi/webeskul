@@ -19,6 +19,7 @@ class CreateDokumentasiTable extends Migration
             $table->string('logo');
             $table->string('penyelenggara');
             $table->string('foto_kegiatan');
+            $table->string('slug_dokumentasi')->unique();
             $table->timestamps();
         });
     }

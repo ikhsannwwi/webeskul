@@ -17,6 +17,7 @@ class CreateBeritaTable extends Migration
             $table->id();
             $table->string('judul_berita');
             $table->string('foto_berita');
+            $table->string('slug_berita')->unique();
             $table->date('tanggal_berita');
             $table->timestamps();
         });

@@ -39,21 +39,22 @@ use App\Http\Controllers\userController;
 //     return view('welcome');
 // });
 
-// Route::get('/login', function () {
-//     return view('admin.validation.login');
-// });
+// Route::get('/tentang-web-ini', [tentangwebController::class, 'tentangweb'])->name('tentangweb');
+Route::get('/tentang-web-ini', function () {
+    return view('layout.subnav.tentangkami.tentang-web-ini');
+});
 Route::get('/', [eskulController::class, 'eskul'])->name('eskul');
 
 Route::get('/dokumentasi_', [dokumentasiController::class, 'dokumentasi'])->name('dokumentasi');
 
 Route::get('/news', [beritaController::class, 'berita'])->name('berita');
+Route::get('/news/{slug}', [beritaController::class, 'detail_berita'])->name('detail_berita');
 
 Route::get('/contact-person', [contactpersonController::class, 'contactperson'])->name('contactperson');
 
 Route::get('/kepala-sekolah', [kepsekController::class, 'kepsek'])->name('kepsek');
 Route::get('/wakil-kepala-sekolah', [wakasekController::class, 'wakasek'])->name('wakasek');
 Route::get('/visi-misi-sejarah', [eskulController::class, 'visimisisejarah'])->name('visimisisejarah');
-Route::get('/tentang-web-ini', [tentangwebController::class, 'tentangweb'])->name('tentangweb');
 
 
 // Route::get('/administrator', [administratorController::class, 'index'])->name('administrator');

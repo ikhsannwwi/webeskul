@@ -63,7 +63,7 @@
               <a href="courses-single-1.html" class="coursesCard -type-1 texttt">
                 <div class="relative">
                   <div class="coursesCard__image overflow-hidden rounded-8">
-                    <img class="w-1/1" src="{{asset('fotokegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
+                    <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
                     <div class="coursesCard__image_overlay rounded-8"></div>
                   </div>
                   <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
@@ -73,13 +73,13 @@
                   <div class="text-17 lh-15 fw-500 text-dark-1 mt-10">{{$row->nama_kegiatan}}</div>
                   <div class="d-flex x-gap-10 items-center pt-10">
                     <div class="d-flex items-center">
-                      <div class="text-14 lh-1">{{$row->penyelenggara}}</div>
+                      {{-- <div class="text-14 lh-1">{{$row->penyelenggara}}</div> --}}
                     </div>
                   </div>
                   <div class="coursesCard-footer">
                     <div class="coursesCard-footer__author">
-                      <img src="{{asset('logodokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
-                      <div>Admin</div>
+                      <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
+                      <div>{{$row->penyelenggara}}</div>
                     </div>
                   </div>
                 </div>
@@ -92,8 +92,8 @@
 
           
 
-          <div class="linkss mt-3">
-            {{$data->links()}}
+          <div class="row">
+            {{$data->links('layout.subnav.pagination.links')}}
           </div>
         </div>
       </section>

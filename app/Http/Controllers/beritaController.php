@@ -22,9 +22,15 @@ class beritaController extends Controller
 
     public function berita(){
 
-        $data = berita::all();
+        $data = berita::orderBy('id', 'DESC')->paginate(9);
         // dd($data);
         return view('layout.subnav.berita', compact('data')) ;
+    }
+    public function detail_berita($slug){
+
+        $detail = berita::where('slug_berita', $slug)->first();
+        // dd($detail);
+        return view('layout.subnav.detail-berita', compact('detail')) ;
     }
 
     public function insertdataberita(Request $request){
@@ -46,6 +52,7 @@ class beritaController extends Controller
 
     public function updateberita(Request $request , $id){
         $data = berita::find($id);
+        $data->slug_berita = Str::slug($request->get('judul_berita'));
         if($request->hasfile('foto_berita')){
             if(File_exists(public_path('images/foto-berita/'.$data->foto_berita))){ //either you can use file path instead of $data->image
                 unlink(public_path('images/foto-berita/'.$data->foto_berita));//here you can also use path like as ('uploads/media/welcome/'. $data->image)
