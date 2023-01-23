@@ -46,6 +46,7 @@ Route::get('/tentang-web-ini', function () {
 Route::get('/', [eskulController::class, 'eskul'])->name('eskul');
 
 Route::get('/dokumentasi_', [dokumentasiController::class, 'dokumentasi'])->name('dokumentasi');
+Route::get('/dokumentasi/{slug}', [dokumentasiController::class, 'detail_dokumentasi'])->name('detail_dokumentasi');
 
 Route::get('/news', [beritaController::class, 'berita'])->name('berita');
 Route::get('/news/{slug}', [beritaController::class, 'detail_berita'])->name('detail_berita');
@@ -59,40 +60,40 @@ Route::get('/visi-misi-sejarah', [eskulController::class, 'visimisisejarah'])->n
 
 // Route::get('/administrator', [administratorController::class, 'index'])->name('administrator');
 
-Route::get('/mpk{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/osis{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/irma{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/pks{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/pramuka-putra{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/pramuka-putri{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/paskibra{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/volly{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/futsal-putra{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/futsal-putri{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/sepakbola{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/basket{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/hockey{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/badminton{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/karate{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/taekwondo{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/silat{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/tarung-derajat{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/kir{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/kopsis{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/pmr{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/seni-tari{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/marching-band{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/seni-kriya{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/paduan-suara{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/karawitan{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/teater{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/seni-musik{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/it-club{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/broadcast{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/english-club{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/japan-club{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/korean-club{id}', [exController::class, 'ex'])->name('ex');
-Route::get('/deutsch-club{id}', [exController::class, 'ex'])->name('ex');
+Route::get('/eskul/{slug}', [exController::class, 'ex'])->name('ex');
+// Route::get('/osis{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/irma{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/pks{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/pramuka-putra{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/pramuka-putri{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/paskibra{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/volly{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/futsal-putra{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/futsal-putri{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/sepakbola{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/basket{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/hockey{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/badminton{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/karate{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/taekwondo{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/silat{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/tarung-derajat{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/kir{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/kopsis{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/pmr{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/seni-tari{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/marching-band{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/seni-kriya{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/paduan-suara{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/karawitan{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/teater{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/seni-musik{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/it-club{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/broadcast{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/english-club{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/japan-club{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/korean-club{id}', [exController::class, 'ex'])->name('ex');
+// Route::get('/deutsch-club{id}', [exController::class, 'ex'])->name('ex');
 
 
 // Validation

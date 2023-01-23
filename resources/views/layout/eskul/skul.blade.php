@@ -51,7 +51,7 @@
       <div class="row no-gutters justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-11">
           <div class="shopCompleted-header">
-            <img src="{{asset('logoeskul/'.$data->logo)}}" alt="{{$data->logo}}">
+            <img src="{{asset('images/logo-eskul/'.$data->logo)}}" alt="{{$data->logo}}">
           </div>
 
           <div class="shopCompleted-info">

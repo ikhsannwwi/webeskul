@@ -34,7 +34,13 @@ class dokumentasiController extends Controller
         // dd($data);
         return view('layout.subnav.dokumentasi', compact('data')) ;
     }
+    
+    public function detail_dokumentasi($slug){
 
+        $detail = dokumentasi::where('slug_dokumentasi', $slug)->first();
+        // dd($detail);
+        return view('layout.subnav.detail-dokumentasi', compact('detail')) ;
+    }
     
 
     public function insertdatadokumentasi(Request $request){

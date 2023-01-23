@@ -66,11 +66,11 @@
                 
     
                 <div class="explore__item">
-                  <a href="/mpk1" class="text-dark-1 ">MPK</a>
+                  <a href="/eskul/mpk1" class="text-dark-1 ">MPK</a>
                 </div>
     
                 <div class="explore__item">
-                  <a href="/osis2" class="text-dark-1 ">OSIS</a>
+                  <a href="/eskul/osis2" class="text-dark-1 ">OSIS</a>
                 </div>
     
                 <div class="explore__item">
@@ -78,7 +78,7 @@
                     Sekbid 1<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/irma3">IRMA</a>
+                    <a class="text-dark-1 " href="/eskul/irma3">IRMA</a>
                   </div>
                 </div>
     
@@ -87,7 +87,7 @@
                     Sekbid 2<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/pks4">PKS</a>
+                    <a class="text-dark-1 " href="/eskul/pks4">PKS</a>
                   </div>
                 </div>
     
@@ -96,9 +96,9 @@
                     Sekbid 3<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/pramuka-putra5">PRAMUKA PUTRA</a>
-                    <a class="text-dark-1 " href="/pramuka-putri6">PRAMUKA PUTRI</a>
-                    <a class="text-dark-1 " href="/paskibra7">PASKIBRA</a>
+                    <a class="text-dark-1 " href="/eskul/pramukaputra5">PRAMUKA PUTRA</a>
+                    <a class="text-dark-1 " href="/eskul/pramukaputri6">PRAMUKA PUTRI</a>
+                    <a class="text-dark-1 " href="/eskul/paskibra7">PASKIBRA</a>
                   </div>
                 </div>
     
@@ -107,17 +107,17 @@
                     Sekbid 4<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/volly8">VOLLY</a>
-                    <a class="text-dark-1 " href="/futsal-putra9">FUTSAL PUTRA</a>
-                    <a class="text-dark-1 " href="/futsal-putri10">FUTSAL PUTRI</a>
-                    <a class="text-dark-1 " href="/sepakbola35">SEPAK BOLA</a>
-                    <a class="text-dark-1 " href="/basket12">BASKET</a>
-                    <a class="text-dark-1 " href="/hockey13">HOCKEY</a>
-                    <a class="text-dark-1 " href="/badminton14">BADMINTON</a>
-                    <a class="text-dark-1 " href="/karate15">KARATE</a>
-                    <a class="text-dark-1 " href="/taekwondo16">TAEKWONDO</a>
-                    <a class="text-dark-1 " href="/silat17">SILAT</a>
-                    <a class="text-dark-1 " href="/tarung-derajat18">TARUNG DERAJAT</a>
+                    <a class="text-dark-1 " href="/eskul/volly8">VOLLY</a>
+                    <a class="text-dark-1 " href="/eskul/futsalputra9">FUTSAL PUTRA</a>
+                    <a class="text-dark-1 " href="/eskul/futsalputri10">FUTSAL PUTRI</a>
+                    <a class="text-dark-1 " href="/eskul/sepakbola35">SEPAK BOLA</a>
+                    <a class="text-dark-1 " href="/eskul/basket12">BASKET</a>
+                    <a class="text-dark-1 " href="/eskul/hockey13">HOCKEY</a>
+                    <a class="text-dark-1 " href="/eskul/badminton14">BADMINTON</a>
+                    <a class="text-dark-1 " href="/eskul/karate15">KARATE</a>
+                    <a class="text-dark-1 " href="/eskul/taekwondo16">TAEKWONDO</a>
+                    <a class="text-dark-1 " href="/eskul/silat17">SILAT</a>
+                    <a class="text-dark-1 " href="/eskul/tarungderajat18">TARUNG DERAJAT</a>
                   </div>
                 </div>
     
@@ -126,7 +126,7 @@
                     Sekbid 5<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/kir19">KIR</a>
+                    <a class="text-dark-1 " href="/eskul/kir19">KIR</a>
                   </div>
                 </div>
     
@@ -135,7 +135,7 @@
                     Sekbid 6<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/kopsis20">KOPSIS</a>
+                    <a class="text-dark-1 " href="/eskul/kopsis20">KOPSIS</a>
                   </div>
                 </div>
     
@@ -144,7 +144,7 @@
                     Sekbid 7<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/pmr21">PMR</a>
+                    <a class="text-dark-1 " href="/eskul/pmr21">PMR</a>
                   </div>
                 </div>
     
@@ -153,13 +153,13 @@
                     Sekbid 8<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/seni-tari22">SENI TARI</a>
-                    <a class="text-dark-1 " href="/marching-band23">MARCHING BAND</a>
-                    <a class="text-dark-1 " href="/seni-kriya24">SENI KRIYA</a>
-                    <a class="text-dark-1 " href="/paduan-suara25">PADUAN SUARA</a>
-                    <a class="text-dark-1 " href="/karawitan26">KARAWITAN</a>
-                    <a class="text-dark-1 " href="/teater27">TEATER</a>
-                    <a class="text-dark-1 " href="/seni-musik28">SENI MUSIK</a>
+                    <a class="text-dark-1 " href="/eskul/senitari22">SENI TARI</a>
+                    <a class="text-dark-1 " href="/eskul/marching-band23">MARCHING BAND</a>
+                    <a class="text-dark-1 " href="/eskul/senikriya24">SENI KRIYA</a>
+                    <a class="text-dark-1 " href="/eskul/paduan-suara25">PADUAN SUARA</a>
+                    <a class="text-dark-1 " href="/eskul/karawitan26">KARAWITAN</a>
+                    <a class="text-dark-1 " href="/eskul/teater27">TEATER</a>
+                    <a class="text-dark-1 " href="/eskul/senimusik28">SENI MUSIK</a>
                   </div>
                 </div>
     
@@ -168,8 +168,8 @@
                     Sekbid 9<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/it-club29">IT-CLUB</a>
-                    <a class="text-dark-1 " href="/broadcast30">BROADCAST</a>
+                    <a class="text-dark-1 " href="/eskul/itclub29">IT-CLUB</a>
+                    <a class="text-dark-1 " href="/eskul/broadcast30">BROADCAST</a>
                   </div>
                 </div>
     
@@ -178,10 +178,10 @@
                     Sekbid 10<div class="icon-chevron-right text-11"></div>
                   </a>
                   <div class="explore__subnav rounded-8">
-                    <a class="text-dark-1 " href="/english-club31">ENGLISH CLUB</a>
-                    <a class="text-dark-1 " href="/korean-club32">KOREAN CLUB</a>
-                    <a class="text-dark-1 " href="/japan-club33">JAPAN CLUB</a>
-                    <a class="text-dark-1 " href="/deutsch-club34">DEUTSCH CLUB</a>
+                    <a class="text-dark-1 " href="/eskul/englishclub31">ENGLISH CLUB</a>
+                    <a class="text-dark-1 " href="/eskul/koreanclub32">KOREAN CLUB</a>
+                    <a class="text-dark-1 " href="/eskul/japanclub33">JAPAN CLUB</a>
+                    <a class="text-dark-1 " href="/eskul/deutschclub34">DEUTSCH CLUB</a>
                   </div>
                 </div>
     
@@ -196,36 +196,34 @@
     
                 <div class="menu js-navList">
                   <ul class="menu__nav text-dark-1 -is-active">
-                    <li>
+                    <li class="{{ (request()->is('/')) ? 'active' : '' }}">
                       <a data-barba class="" href="/">Home</a>
                     </li>
     
-                    <li class="menu-item-has-children dropdown" >
+                    <li class="menu-item-has-children dropdown {{ (request()->is('kepala-sekolah','wakil-kepala-sekolah','visi-misi-sejarah','tentang-web-ini')) ? 'active' : '' }}" >
                       <a data-barba  href="#">Tentang Kami <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
                       <ul class="subnav dropdown-menu martoppp" >
     
-                        <li><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
+                        <li class="{{ (request()->is('kepala-sekolah')) ? 'active' : '' }}" ><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
     
-                        <li><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
+                        <li class="{{ (request()->is('wakil-kepala-sekolah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
     
-                        <li><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
+                        <li class="{{ (request()->is('visi-misi-sejarah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
     
-                        <li><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
+                        <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
     
                       </ul>
                     </li>
     
-                    <li>
+                    <li class="{{ (request()->is('dokumentasi_')) ? 'active' : '' }}">
                       <a class="" data-barba href="/dokumentasi_">Dokumentasi</a>
                     </li>
     
-                    <li>
+                    <li class="{{ (request()->is('news')) ? 'active' : '' }}">
                       <a class="" data-barba href="/news">Berita</a>
                     </li>
     
-                    <li>
-                      <a class="" data-barba href="/contact-person">Hubungi Kami</a>
-                    </li>
+                    
                   </ul>
                 </div>
     
@@ -299,10 +297,118 @@
 
   @yield('content')
   @yield('dokumentasi')
+
+
+
+  <footer class="footer-section bg-light-9">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>JALAN CIMANUK NO 309 A Tarogong Kidul</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <a href="Phone:(0262) 233316">
+                              <span>(0262) 233316</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>www.smknegeri1garut.sch.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a ><img src="{{asset('webex/img/general/footer.png')}}" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>SMK NEGERI 1 GARUT<br>
+                              JALAN CIMANUK NO 309 A Kecamatan Tarogong Kidul Kabupaten Garut Provinsi Jawa Barat</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Link Terkait</h3>
+                        </div>
+                        <ul>
+                            <li><a href="https://smknegeri1garut.sch.id">SMK Negeri 1 Garut</a></li>
+                            <li><a href="https://jabarprov.go.id">Pemerintah Provinsi Jawa Barat</a></li>
+                            <li><a href="https://garutkab.go.id">Pemerintah Kabupaten Garut</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCWqTHZxswHc813_p8tQcKBA">Youtube SMK Negeri 1 Garut</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; {{date('Y')}} Webex <a href="www.smknegeri1garut.sch.id">SMK Negeri 1 Garut</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/tentang-web-ini">Tentang Kami</a></li>
+                            <li><a href="/dokumentasi_">Dokumentasi</a></li>
+                            <li><a href="/news">Berita</a></li>
+                            <li><a href="/kepala-sekolah">Sambutan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
   
 
 
-  <footer class="footer -type-1 -dark bg-light-9">
+  {{-- <footer class="footer -type-1 -dark bg-light-9">
     <div class="container">
       <div class="footer-header border-bottom-dark">
         <div class="row y-gap-20 justify-between items-center">
@@ -332,12 +438,12 @@
       <div class="footer-footer border-top-dark">
         <div class="row justify-between y-gap-20"><center>
           <div class="col-md-6">
-            <div class="footer-footer__copyright">Copyright © 2022 IT-Club SMKN 1 Garut.</div>
+            <div class="footer-footer__copyright">Copyright © {{date('Y')}} Webex SMKN 1 Garut.</div>
           </div></center>
         </div>
       </div>
     </div>
-</footer>
+</footer> --}}
 </div>
 </main>
 </div>

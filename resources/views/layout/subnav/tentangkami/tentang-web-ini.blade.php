@@ -104,7 +104,7 @@
             </div>
             <div class="teamCard-footer">
               <div class="teamCard-footer__author">
-                <img src="{{asset('images/logo-eskul/itclub.png')}}" alt="Pengembang">
+                <img src="{{asset('images/logo-eskul/paskibra.png')}}" alt="Pengembang">
                 <div>Paskibra</div>
               </div>
             </div>

@@ -8,9 +8,9 @@ use App\Models\eskul;
 
 class exController extends Controller
 {
-    public function ex($id){
+    public function ex($slug){
 
-        $data = eskul::find($id);
+        $data = eskul::where('slug', $slug)->first();
         // dd($data);
         return view('layout.eskul.skul', compact('data')) ;
     }

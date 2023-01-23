@@ -120,7 +120,7 @@
 
                     @foreach ($data as $row)
                   <div class="swiper-slide h-100">
-                    <a class="" href="/{{$row->slug}}">
+                    <a class="" href="/eskul/{{$row->slug}}">
                       <div data-anim-child="slide-left delay-2" class="infoCard -type-1">
                           <div class="infoCard__image">
                             <img style="width: 100px; height: 99px;" src="{{asset('images/logo-eskul/'.$row->logo)}}" alt="{{$row->logo}}">
@@ -186,7 +186,7 @@
                   <div class="swiper-slide">
                   <div data-anim-child="slide-up delay-1">
   
-                      <a href="/dokumentasi_" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
+                      <a href="/dokumentasi/{{$row->slug_dokumentasi}}" class=" coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                       <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
                           <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->foto_kegiatan}}">
