@@ -5744,7 +5744,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .masthead.-type-3 .masthead-search__form {
   position: relative;
-  width: 600px;
+  width: 300px;
 }
 
 @media (max-width: 767px) {

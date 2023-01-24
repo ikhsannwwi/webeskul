@@ -49,8 +49,8 @@
                       <i class='bx bx-search' ></i>
                       <i class='bx bx-filter' ></i>
                       <div class="form-group col-4">
-                        <form action="administrator" method="GET">
-                          <input  type="search" class="form-control" name="search"  placeholder="Cari Nama Ekstrakurikuler">
+                        <form action="dokumentasi" method="GET">
+                          <input  type="search" class="form-control" name="search"  placeholder="Cari Nama Kegiatan">
                         </form>
                       </div>
                     </div>

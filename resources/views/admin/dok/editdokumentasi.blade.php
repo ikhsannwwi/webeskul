@@ -44,14 +44,17 @@
                     <label for="exampleInputEmail1">Nama Kegiatan</label>
                     <input type="text" class="form-control" value="{{$data->nama_kegiatan}}" name="nama_kegiatan" id="exampleInputEmail1" placeholder="Masukan Nama Ekstrakurikuler">
                   </div>
-                  <div class="form-group">
-                      <label for="exampleInputFile">Logo Ekstrakurikuler</label>
-                      <input type="file" class="form-control" value="{{$data->logo}}" name="logo" >
-                  </div>
+                  
                   <div class="form-group">
                     <label for="exampleInputPassword1">Penyelenggara</label>
-                    <input type="text" class="form-control" value="{{$data->penyelenggara}}" name="penyelenggara" id="exampleInputPassword1" placeholder="Masukan Nama Penyelenggara">
-                  </div>
+                    <select class="custom-select rounded-0" name="penyelenggara" id="exampleSelectRounded0">
+                      <option selected value="{{$data->eskul->id}}">{{$data->eskul->nama_eskul}}</option>
+                      @foreach ($data_eskul as $data)
+                      <option value="{{$data->id}}">{{$data->nama_eskul}}</option>
+                      @endforeach
+                    </select>
+                    {{-- <input required type="text" class="form-control" name="penyelenggara" id="exampleInputPassword1" placeholder="Masukan Penyelenggara"> --}}
+                </div>
                   <div class="form-group">
                       <label for="exampleInputFile">Foto Kegiatan</label>
                       <input type="file" class="form-control" value="{{$data->foto_kegiatan}}" name="foto_kegiatan" >

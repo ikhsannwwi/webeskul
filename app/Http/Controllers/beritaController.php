@@ -23,8 +23,10 @@ class beritaController extends Controller
     public function berita(){
 
         $data = berita::orderBy('tanggal_berita', 'DESC')->paginate(9);
+        $berita_terbaru = berita::orderBy('tanggal_berita', 'DESC')->limit(1)->get();
+        $berita_terbaru2 = berita::orderBy('tanggal_berita', 'DESC')->skip(1)->take(2)->get();
         // dd($data);
-        return view('layout.subnav.berita', compact('data')) ;
+        return view('layout.subnav.berita', compact('data','berita_terbaru','berita_terbaru2')) ;
     }
     public function detail_berita($slug){
 

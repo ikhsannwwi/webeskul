@@ -200,29 +200,29 @@
                       <a data-barba class="" href="/">Home</a>
                     </li>
     
-                    <li class="menu-item-has-children dropdown {{ (request()->is('kepala-sekolah','wakil-kepala-sekolah','visi-misi-sejarah','tentang-web-ini')) ? 'active' : '' }}" >
-                      <a data-barba  href="#">Tentang Kami <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
+                    
+                    <li class="{{ (request()->is('visi-misi-sejarah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
+                    
+                    <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
+                    
+                    <li class="{{ (request()->is('dokumentasi_')) ? 'active' : '' }}">
+                      <a class="" data-barba href="/dokumentasi_">Dokumentasi</a>
+                    </li>
+                    
+                    <li class="{{ (request()->is('news')) ? 'active' : '' }}">
+                      <a class="" data-barba href="/news">Berita</a>
+                    </li>
+                    
+                    <li class="menu-item-has-children dropdown {{ (request()->is('kepala-sekolah','wakil-kepala-sekolah')) ? 'active' : '' }}" >
+                      <a data-barba  href="#">Sambutan <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
                       <ul class="subnav dropdown-menu martoppp" >
     
                         <li class="{{ (request()->is('kepala-sekolah')) ? 'active' : '' }}" ><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
     
                         <li class="{{ (request()->is('wakil-kepala-sekolah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
     
-                        <li class="{{ (request()->is('visi-misi-sejarah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
-    
-                        <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
-    
                       </ul>
                     </li>
-    
-                    <li class="{{ (request()->is('dokumentasi_')) ? 'active' : '' }}">
-                      <a class="" data-barba href="/dokumentasi_">Dokumentasi</a>
-                    </li>
-    
-                    <li class="{{ (request()->is('news')) ? 'active' : '' }}">
-                      <a class="" data-barba href="/news">Berita</a>
-                    </li>
-    
                     
                   </ul>
                 </div>

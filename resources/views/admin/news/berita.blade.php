@@ -33,9 +33,7 @@
                 </div>
 
                 <div class="form-group col-4">
-                  <form action="berita" method="GET">
-                    <input  type="search" class="form-control" name="search"  placeholder="Cari Nama Ekstrakurikuler">
-                  </form>
+                  
                 </div>
                 <!-- /.card-header -->
                 <div class="table-data">
@@ -54,8 +52,8 @@
                       <i class='bx bx-search' ></i>
                       <i class='bx bx-filter' ></i>
                       <div class="form-group col-4">
-                        <form action="administrator" method="GET">
-                          <input  type="search" class="form-control" name="search"  placeholder="Cari Nama Ekstrakurikuler">
+                        <form action="berita" method="GET">
+                          <input  type="search" class="form-control" name="search"  placeholder="Cari Judul Berita">
                         </form>
                       </div>
                     </div>

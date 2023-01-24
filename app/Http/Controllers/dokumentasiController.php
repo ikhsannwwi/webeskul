@@ -14,7 +14,9 @@ class dokumentasiController extends Controller
 
         if($request->has('search')){
             $data = dokumentasi::where('nama_kegiatan','like', '%' .$request->search. '%')->paginate(5);
-            $data = eskul::orWhere('nama_eskul','like', '%' .$request->search. '%')->paginate(5);
+            $data = dokumentasi::orWhere('penyelenggara','like', '%' .$request->search. '%')->paginate(5);
+            // dd($data);
+            $data_eskul = eskul::all();
         }else{
             $data = dokumentasi::orderBy('id', 'DESC')->paginate(5);
             $data_eskul = eskul::all();
@@ -66,7 +68,9 @@ class dokumentasiController extends Controller
 
     public function editdokumentasi($id){
         $data = dokumentasi::find($id);
-        return view('admin.dok.editdokumentasi', compact('data'));
+        $data_eskul = eskul::all();
+
+        return view('admin.dok.editdokumentasi', compact('data','data_eskul'));
     }
 
     public function updatedokumentasi(Request $request , $id){

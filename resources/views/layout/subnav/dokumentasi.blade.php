@@ -28,9 +28,11 @@
           </div>
         </div>
       </section>
+      
 
 
       <section class="page-header -type-1">
+        
         <div class="container">
           <div class="page-header__content">
             <div class="row">
@@ -47,6 +49,7 @@
 
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

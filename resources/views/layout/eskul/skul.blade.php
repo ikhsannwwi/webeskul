@@ -128,7 +128,7 @@
             
 
         <div class="col-xl-3 col-lg-4 col-md-6">
-          <a href="/dokumentasi/" class="coursesCard -type-1 texttt">
+          <a href="/dokumentasi/{{$row->slug_dokumentasi}}" class="coursesCard -type-1 texttt">
             <div class="relative">
               <div class="coursesCard__image overflow-hidden rounded-8">
                 <img class="w-1/1" src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" alt="{{$row->nama_kegiatan}}">
