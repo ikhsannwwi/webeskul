@@ -78,8 +78,8 @@
                   </div>
                   <div class="coursesCard-footer">
                     <div class="coursesCard-footer__author">
-                      <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" alt="{{$row->logo}}">
-                      <div>{{$row->penyelenggara}}</div>
+                      <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" alt="{{$row->eskul->logo}}">
+                      <div>{{$row->eskul->nama_eskul}}</div>
                     </div>
                   </div>
                 </div>

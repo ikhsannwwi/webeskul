@@ -387,7 +387,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div class="copyright-text">
-                        <p>Copyright &copy; {{date('Y')}} Webex <a href="www.smknegeri1garut.sch.id">SMK Negeri 1 Garut</a></p>
+                        <p>Copyright &copy; {{date('Y')}} Webex <a href="https://smknegeri1garut.sch.id">SMK Negeri 1 Garut</a></p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">

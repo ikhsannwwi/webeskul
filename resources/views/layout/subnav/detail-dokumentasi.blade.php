@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="breadcrumbs__item ">
-                  <a href="#">{{$detail->penyelenggara}}</a>
+                  <a href="/eskul/{{$detail->eskul->slug}}">{{$detail->eskul->nama_eskul}}</a>
                 </div>
 
                 <div class="breadcrumbs__item ">
@@ -45,7 +45,7 @@
               <div class="col-auto">
                 <div data-anim="slide-up delay-1">
 
-                  <h1 class="page-header__title">Dokumentasi Ekstrakulikuler {{$detail->penyelenggara}}</h1>
+                  <h1 class="page-header__title">Dokumentasi Ekstrakulikuler {{$detail->eskul->nama_eskul}}</h1>
 
                 </div>
 
@@ -85,8 +85,8 @@
                   </div>
                   <div class="coursesCard-footer">
                     <div class="coursesCard-footer__author">
-                      <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$detail->logo)}}" alt="{{$detail->logo}}">
-                      <div>{{$detail->penyelenggara}}</div>
+                      <img src="{{asset('images/logo-eskul/'.$detail->eskul->logo)}}" alt="{{$detail->eskul->logo}}">
+                      <div>{{$detail->eskul->nama_eskul}}</div>
                     </div>
                   </div>
                 </div>

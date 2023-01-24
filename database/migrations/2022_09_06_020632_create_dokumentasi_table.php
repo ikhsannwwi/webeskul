@@ -16,8 +16,7 @@ class CreateDokumentasiTable extends Migration
         Schema::create('dokumentasis', function (Blueprint $table) {
             $table->id();
             $table->string('nama_kegiatan');
-            $table->string('logo');
-            $table->string('penyelenggara');
+            $table->foreignId('penyelenggara');
             $table->string('foto_kegiatan');
             $table->string('slug_dokumentasi')->unique();
             $table->timestamps();

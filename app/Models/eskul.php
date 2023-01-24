@@ -15,8 +15,12 @@ class eskul extends Model
     public function slugConfigs(): array
     {
         return [
-            'slug_dokumentasi' => 'nama_kegiatan'
+            'slug' => 'nama_eskul'
         ];
+    }
+
+    public function dokumentasi(){
+        return $this->hasMany(dokumentasi::class, 'penyelenggara');
     }
     
 }

@@ -18,4 +18,8 @@ class dokumentasi extends Model
             'slug_dokumentasi' => 'nama_kegiatan'
         ];
     }
+
+    public function eskul(){
+        return $this->belongsTo(eskul::class  ,'penyelenggara', 'id');
+    }
 }

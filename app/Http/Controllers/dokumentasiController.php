@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Models\dokumentasi;
+use App\Models\eskul;
 
 
 class dokumentasiController extends Controller
@@ -13,12 +14,13 @@ class dokumentasiController extends Controller
 
         if($request->has('search')){
             $data = dokumentasi::where('nama_kegiatan','like', '%' .$request->search. '%')->paginate(5);
-            $data = dokumentasi::orWhere('penyelenggara','like', '%' .$request->search. '%')->paginate(5);
+            $data = eskul::orWhere('nama_eskul','like', '%' .$request->search. '%')->paginate(5);
         }else{
             $data = dokumentasi::orderBy('id', 'DESC')->paginate(5);
+            $data_eskul = eskul::all();
         }
         // dd($data);
-        return view('admin.dok.dokumentasi', compact('data')) ;
+        return view('admin.dok.dokumentasi', compact('data','data_eskul')) ;
     }
 
     public function dok(){

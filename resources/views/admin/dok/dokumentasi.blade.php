@@ -76,9 +76,9 @@
                         <td>{{$no++}}</td>
                         <td>{{$row->nama_kegiatan}}</td>
                         <td>
-                          <img src="{{asset('images/dokumentasi/logo-dokumentasi/'.$row->logo)}}" width="120px" alt="">
+                          <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="">
                         </td>
-                        <td>{{$row->penyelenggara}}</td>
+                        <td>{{$row->eskul->nama_eskul}}</td>
                         <td>
                           <img src="{{asset('images/dokumentasi/foto-kegiatan/'.$row->foto_kegiatan)}}" width="120px" alt="">
                         </td>
@@ -137,13 +137,19 @@
                         <label for="exampleInputEmail1">Nama Kegiatan</label>
                         <input required type="text" class="form-control" name="nama_kegiatan" id="exampleInputEmail1" placeholder="Masukan Nama Kegiatan">
                     </div>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="exampleInputFile">Logo Ekstrakurikuler</label>
                         <input required type="file" class="form-control" name="logo" >
-                    </div>
+                    </div> --}}
                     <div class="form-group">
                         <label for="exampleInputPassword1">Penyelenggara</label>
-                        <input required type="text" class="form-control" name="penyelenggara" id="exampleInputPassword1" placeholder="Masukan Penyelenggara">
+                        <select class="custom-select rounded-0" name="penyelenggara" id="exampleSelectRounded0">
+                          <option selected>Open this select menu</option>
+                          @foreach ($data_eskul as $row)
+                          <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
+                          @endforeach
+                        </select>
+                        {{-- <input required type="text" class="form-control" name="penyelenggara" id="exampleInputPassword1" placeholder="Masukan Penyelenggara"> --}}
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Foto Kegiatan</label>

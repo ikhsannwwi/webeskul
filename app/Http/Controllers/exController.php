@@ -10,7 +10,8 @@ class exController extends Controller
 {
     public function ex($slug){
 
-        $data = eskul::where('slug', $slug)->first();
+        $data = eskul::with('dokumentasi')->get()
+            ->where('slug', $slug)->first();
         // dd($data);
         return view('layout.eskul.skul', compact('data')) ;
     }

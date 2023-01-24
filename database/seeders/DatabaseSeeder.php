@@ -943,43 +943,37 @@ class DatabaseSeeder extends Seeder
 
         dokumentasi::create([
             'nama_kegiatan' => 'Paturay Tineung',
-            'logo' => 'osis.png',
-            'penyelenggara' => 'Osis',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '1.jpg',
             'slug_dokumentasi' => Str::slug('Paturay Tineung'),
         ]);
         dokumentasi::create([
             'nama_kegiatan' => 'Lomba LKS',
-            'logo' => 'itclub.png',
-            'penyelenggara' => 'IT-Club',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '2.jpg',
             'slug_dokumentasi' => Str::slug('Lomba LKS'),
         ]);
         dokumentasi::create([
             'nama_kegiatan' => 'Rapat Plane-off',
-            'logo' => 'mpk.png',
-            'penyelenggara' => 'MPK',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '3.jpg',
             'slug_dokumentasi' => Str::slug('Rapat Plane-off'),
         ]);
         dokumentasi::create([
             'nama_kegiatan' => 'Kejuaraan Sepak Bola Bupati',
-            'logo' => 'sepakbola.png',
-            'penyelenggara' => 'Sepak Bola',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '4.jpg',
             'slug_dokumentasi' => Str::slug('Kejuaraan Sepak Bola Bupati'),
         ]);
         dokumentasi::create([
             'nama_kegiatan' => 'Memperingati hari Pramuka',
-            'logo' => 'pramukaputra.png',
-            'penyelenggara' => 'Pramuka',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '5.jpg',
             'slug_dokumentasi' => Str::slug('Memperingati hari Pramuka'),
         ]);
         dokumentasi::create([
             'nama_kegiatan' => 'Penyambutan Kepala Sekolah',
-            'logo' => 'marchingband.png',
-            'penyelenggara' => 'Marching Band',
+            'penyelenggara' => '29',
             'foto_kegiatan' => '6.jpg',
             'slug_dokumentasi' => Str::slug('Penyambutan Kepala Sekolah'),
         ]);
