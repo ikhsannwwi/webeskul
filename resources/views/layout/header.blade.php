@@ -200,10 +200,19 @@
                       <a data-barba class="" href="/">Home</a>
                     </li>
     
+                    <li class="menu-item-has-children dropdown {{ (request()->is('kepala-sekolah','wakil-kepala-sekolah')) ? 'active' : '' }}" >
+                      <a data-barba  href="#">Sambutan <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
+                      <ul class="subnav dropdown-menu martoppp" >
+                        
+                        <li class="{{ (request()->is('kepala-sekolah')) ? 'active' : '' }}" ><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
+                        
+                        <li class="{{ (request()->is('wakil-kepala-sekolah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
+                        
+                      </ul>
+                    </li>
                     
                     <li class="{{ (request()->is('visi-misi-sejarah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/visi-misi-sejarah">Sejarah, Visi, dan Misi</a></li>
                     
-                    <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web Ini</a></li>
                     
                     <li class="{{ (request()->is('dokumentasi_')) ? 'active' : '' }}">
                       <a class="" data-barba href="/dokumentasi_">Dokumentasi</a>
@@ -213,17 +222,9 @@
                       <a class="" data-barba href="/news">Berita</a>
                     </li>
                     
-                    <li class="menu-item-has-children dropdown {{ (request()->is('kepala-sekolah','wakil-kepala-sekolah')) ? 'active' : '' }}" >
-                      <a data-barba  href="#">Sambutan <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
-                      <ul class="subnav dropdown-menu martoppp" >
-    
-                        <li class="{{ (request()->is('kepala-sekolah')) ? 'active' : '' }}" ><a class=" dropdown-item" href="/kepala-sekolah">Sambutan Kepala Sekolah</a></li>
-    
-                        <li class="{{ (request()->is('wakil-kepala-sekolah')) ? 'active' : '' }}"><a class=" dropdown-item" href="/wakil-kepala-sekolah">Sambutan Wakasek Bidang Kesiswaan</a></li>
-    
-                      </ul>
-                    </li>
                     
+                    <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web</a></li>
+
                   </ul>
                 </div>
     
@@ -348,9 +349,21 @@
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            <a href="#" class="items-center justify-center rounded-full size-40">
+                              <i class="fa fa-facebook"></i>
+                            </a>
+            
+                            <a href="#" class="items-center justify-center rounded-full size-40">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+            
+                            <a href="#" class="items-center justify-center rounded-full size-40">
+                              <i class="fa fa-instagram"></i>
+                            </a>
+            
+                            <a href="#" class="items-center justify-center rounded-full size-40">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -371,7 +384,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                     <div class="footer-widget">
                         <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
+                            <h3>Informasi</h3>
                         </div>
                         <div class="footer-text mb-25">
                             <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
