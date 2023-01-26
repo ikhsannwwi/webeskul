@@ -27,7 +27,7 @@ class eskulController extends Controller
         if($request->has('search')){
                 // $adminitc = DB::
 
-                $adminmpk = DB::select('select * from eskuls where id = 1 ');
+            $adminmpk = DB::select('select * from eskuls where id = 1 ');
             $adminosis = DB::select('select * from eskuls where id = 2 ');
             $adminirma = DB::select('select * from eskuls where id = 3 ');
             $adminpks = DB::select('select * from eskuls where id = 4 ');

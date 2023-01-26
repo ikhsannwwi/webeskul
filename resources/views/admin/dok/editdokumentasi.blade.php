@@ -48,7 +48,7 @@
                   <div class="form-group">
                     <label for="exampleInputPassword1">Penyelenggara</label>
                     <select class="custom-select rounded-0" name="penyelenggara" id="exampleSelectRounded0">
-                      <option selected value="{{$data->eskul->id}}">{{$data->eskul->nama_eskul}}</option>
+                      <option selected value="{{$data->penyelenggara}}">{{$data->eskul->nama_eskul}}</option>
                       @foreach ($data_eskul as $data)
                       <option value="{{$data->id}}">{{$data->nama_eskul}}</option>
                       @endforeach

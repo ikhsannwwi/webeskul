@@ -23,4 +23,7 @@ class eskul extends Model
         return $this->hasMany(dokumentasi::class, 'penyelenggara');
     }
     
+    public function anggota(){
+        return $this->hasMany(anggota::class, 'id_eskul');
+    }
 }

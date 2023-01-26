@@ -12,7 +12,7 @@ use App\Http\Controllers\authController;
 use App\Http\Controllers\contactpersonController;
 use App\Http\Controllers\kepsekController;
 use App\Http\Controllers\wakasekController;
-use App\Http\Controllers\tentangwebController;
+use App\Http\Controllers\anggotaController;
 use App\Http\Controllers\userController;
 
 
@@ -122,6 +122,18 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
 
 
 
+    //anggota
+    Route::get('/anggota', [anggotaController::class, 'index'])->name('anggota')->middleware('auth');
+    Route::post('/insertdataanggota', [anggotaController::class, 'insertdataanggota'])->name('insertdataanggota');
+
+    Route::get('/editanggota/{id}', [anggotaController::class, 'editanggota'])->name('editanggota{id}')->middleware('auth');
+    Route::post('/updateanggota/{id}', [anggotaController::class, 'updateanggota'])->name('updateanggota');
+    
+    Route::get('/deleteanggota/{id}', [anggotaController::class, 'deleteanggota'])->name('deleteanggota');
+    
+
+
+    
     //kepsek
     Route::get('/kepsek', [kepsekController::class, 'index'])->name('kepsek')->middleware('auth');
     Route::post('/insertdatakepsek', [kepsekController::class, 'insertdatakepsek'])->name('insertdatakepsek');

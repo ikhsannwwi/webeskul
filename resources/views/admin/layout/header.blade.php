@@ -112,7 +112,15 @@
             <a href="/administrator" class="nav-link {{request()->is('administrator') ? 'active' : ''}} ">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
+                Ekstrakurikuler
+              </p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="/anggota" class="nav-link {{request()->is('anggota') ? 'active' : ''}} ">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Anggota Ekstrakurikuler
               </p>
             </a>
           </li>
