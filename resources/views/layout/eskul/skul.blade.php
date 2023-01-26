@@ -51,7 +51,7 @@
       <div class="row no-gutters justify-content-center">
         <div class="col-xl-8 col-lg-9 col-md-11">
           <div class="shopCompleted-header">
-            <img src="{{asset('images/logo-eskul/'.$data->logo)}}" alt="{{$data->logo}}">
+            <img src="{{asset('images/logo-eskul/'.$data->logo)}}" alt="{{$data->logo}}" width="500px">
           </div>
 
           <div class="shopCompleted-info">
@@ -114,10 +114,49 @@
               </div>
             </div>
           </div>
+
+
+
+          <div class="shopCompleted-footer bg-light-4 border-light rounded-8">
+            <div class="shopCompleted-footer__wrap">
+              <center>
+              <h2 class="title">
+                Anggota {{$data->nama_eskul}}
+              </h2>
+              </center>
+              <div data-anim="slide-up delay-3" class="row justify-center">
+                <table id="data_anggota" class="table table-striped data_anggota" style="width:100%">
+                  <thead>
+                      <tr>
+                          <th>No</th>
+                          <th>NIS</th>
+                          <th>Nama Anggota</th>
+                          <th>Kelas</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    @php
+                        $no = 1;
+                    @endphp
+                    @foreach ($data->anggota as $row)
+                    <tr>
+                        <td>{{$no++}}</td>
+                        <td>{{$row->nis}}</td>
+                        <td>{{$row->nama_anggota}}</td>
+                        <td>{{$row->kelas_anggota .' - '.$row->jurusan}}</td>
+                    </tr>
+                    
+                    @endforeach
+                  </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  
   
   {{-- @foreach ($data as $row) --}}
   <section class="layout-pt-md layout-pb-lg">
@@ -166,4 +205,11 @@
     </div>
   </section>
   {{-- @endforeach --}}
+  {{-- @push('script')
+  <script type="text/javascript">
+    $(document).ready(function(){ $('#data_anggota').DataTable(); }); 
+  </script>
+  @endpush --}}
+
+  
 @endsection

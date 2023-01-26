@@ -906,6 +906,8 @@ const Tabs = (function() {
   11. Lazy loading
 ---------------------------------------------------*/
 
+
+
 function lazyLoading() {
   if (!document.querySelector('.js-lazy')) {
     return;

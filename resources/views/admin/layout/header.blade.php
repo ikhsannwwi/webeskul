@@ -124,6 +124,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a href="/pendaftaran" class="nav-link {{request()->is('pendaftaran') ? 'active' : ''}} ">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Pendaftaran
+              </p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="/dokumentasi" class="nav-link {{request()->is('dokumentasi') ? 'active' : ''}}">
               <i class="nav-icon fas fa-th"></i>

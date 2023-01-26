@@ -19,6 +19,7 @@
   <link rel="icon" type="image/x-icon" href="{{asset('images/page-loader/smea.ico')}}">
 
 
+  {{-- Data Tables --}}
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{asset('webex/css/main.css')}}">
@@ -469,6 +470,11 @@
 
 <!-- Mirrored from creativelayers.net/themes/educrat-html/home-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jul 2022 12:43:55 GMT -->
 </html>
+@stack('script')
 <script src="https://unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <script src="{{asset('webex/js/vendors.js')}}"></script>
 <script src="{{asset('webex/js/main.js')}}"></script>
+{{-- <script src="{{asset('webex/js/datatable.js')}}"></script> --}}
+{{-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
+{{-- <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script> --}}

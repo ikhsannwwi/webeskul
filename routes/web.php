@@ -13,6 +13,7 @@ use App\Http\Controllers\contactpersonController;
 use App\Http\Controllers\kepsekController;
 use App\Http\Controllers\wakasekController;
 use App\Http\Controllers\anggotaController;
+use App\Http\Controllers\pendaftaranController;
 use App\Http\Controllers\userController;
 
 
@@ -57,43 +58,12 @@ Route::get('/kepala-sekolah', [kepsekController::class, 'kepsek'])->name('kepsek
 Route::get('/wakil-kepala-sekolah', [wakasekController::class, 'wakasek'])->name('wakasek');
 Route::get('/visi-misi-sejarah', [eskulController::class, 'visimisisejarah'])->name('visimisisejarah');
 
+Route::get('/pendaftaran-eskul', [pendaftaranController::class, 'pendaftaran_eskul'])->name('pendaftaran_eskul');
 
 // Route::get('/administrator', [administratorController::class, 'index'])->name('administrator');
 
 Route::get('/eskul/{slug}', [exController::class, 'ex'])->name('ex');
-// Route::get('/osis{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/irma{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/pks{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/pramuka-putra{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/pramuka-putri{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/paskibra{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/volly{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/futsal-putra{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/futsal-putri{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/sepakbola{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/basket{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/hockey{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/badminton{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/karate{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/taekwondo{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/silat{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/tarung-derajat{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/kir{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/kopsis{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/pmr{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/seni-tari{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/marching-band{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/seni-kriya{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/paduan-suara{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/karawitan{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/teater{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/seni-musik{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/it-club{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/broadcast{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/english-club{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/japan-club{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/korean-club{id}', [exController::class, 'ex'])->name('ex');
-// Route::get('/deutsch-club{id}', [exController::class, 'ex'])->name('ex');
+
 
 
 // Validation
@@ -118,20 +88,28 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
     Route::post('/updatepassword/{id}', [userController::class, 'updatepassword'])->name('updatepassword');
     Route::get('edituser/editpassword/backtoedituser/{id}', [userController::class, 'backtoedituser'])->name('backtoedituser');
     
+    
 
 
 
-
-    //anggota
+ //anggota
     Route::get('/anggota', [anggotaController::class, 'index'])->name('anggota')->middleware('auth');
     Route::post('/insertdataanggota', [anggotaController::class, 'insertdataanggota'])->name('insertdataanggota');
 
     Route::get('/editanggota/{id}', [anggotaController::class, 'editanggota'])->name('editanggota{id}')->middleware('auth');
     Route::post('/updateanggota/{id}', [anggotaController::class, 'updateanggota'])->name('updateanggota');
     
-    Route::get('/deleteanggota/{id}', [anggotaController::class, 'deleteanggota'])->name('deleteanggota');
+    Route::get('/deleteanggota/{id}', [anggotaController::class, 'deleteanggota'])->name('deleteanggota');   
     
-
+    
+    //pendaftaran
+       Route::get('/pendaftaran', [pendaftaranController::class, 'index'])->name('pendaftaran')->middleware('auth');
+       Route::post('/insertdatapendaftaran', [pendaftaranController::class, 'insertdatapendaftaran'])->name('insertdatapendaftaran');
+   
+       Route::get('/editpendaftaran/{id}', [pendaftaranController::class, 'editpendaftaran'])->name('editpendaftaran{id}')->middleware('auth');
+       Route::post('/updatependaftaran/{id}', [pendaftaranController::class, 'updatependaftaran'])->name('updatependaftaran');
+       
+       Route::get('/deletependaftaran/{id}', [pendaftaranController::class, 'deletependaftaran'])->name('deletependaftaran');   
 
     
     //kepsek
