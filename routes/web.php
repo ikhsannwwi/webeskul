@@ -105,7 +105,7 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
     
     //pendaftaran
        Route::get('/pendaftaran-eskul', [pendaftaranController::class, 'index'])->name('pendaftaran')->middleware('auth');
-       Route::post('/add-pending-calon-anggota/{id}', [pendaftaranController::class, 'add_pending_calon_anggota'])->name('add_pending_calon_anggota')->middleware('auth');
+       Route::post('/add-pendaftaran/{id}', [pendaftaranController::class, 'add_pendaftaran'])->name('add_pendaftaran')->middleware('auth');
        Route::post('/insertdatapendaftaran', [pendaftaranController::class, 'insertdatapendaftaran'])->name('insertdatapendaftaran');
        Route::post('/insertdatapendaftarantopendaftaran', [pendaftaranController::class, 'insertdatapendaftarantopendaftaran'])->name('insertdatapendaftarantopendaftaran');
    

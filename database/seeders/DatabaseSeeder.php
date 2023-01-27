@@ -311,7 +311,7 @@ class DatabaseSeeder extends Seeder
 
 
         administrator::create([
-            'on' => '1'
+            'on' => '0'
         ]);
 
 

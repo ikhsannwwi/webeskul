@@ -47,7 +47,9 @@
             <h3 class="text-24 fw-500">Masukan Data anda</h3>
             <p class="mt-25">Pilih Ekstrakurikuler sesuai dengan kemauan anda<br> tincidunt egetnvallis.</p>
 
-                
+                @foreach ($on as $item)
+                @if ($item->on == 1)
+
             <form class="contact-form row y-gap-30 pt-60 lg:pt-40" action="/insertdatapendaftaran" method="POST">
               @csrf
               <div class="col-12">
@@ -57,7 +59,6 @@
               <div class="col-12">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nama Siswa</label>
                 <input type="text" name="nama_calon_anggota" placeholder="Email...">
-                <input class="d-none" type="text" name="pending" value="0">
               </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas Anggota</label>
@@ -99,6 +100,11 @@
                 </button>
               </div>
             </form>
+              @else
+              
+                    <h3 class="my-5 text-center"><strong>Pendaftaran ditutup</strong></h3>
+              @endif
+            @endforeach
 
           </div>
         </div>

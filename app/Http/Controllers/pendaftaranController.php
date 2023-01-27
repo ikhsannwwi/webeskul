@@ -55,6 +55,8 @@ class pendaftaranController extends Controller
                 ->orWhere('id_eskul','like', '%' .$request->search. '%')->paginate(5);
 
             $data_eskul = eskul::all();
+            $on = administrator::all();
+
 
         }else{
             $adminmpk = pendaftaran::where('id_eskul','=','1')->get();
@@ -96,9 +98,12 @@ class pendaftaranController extends Controller
 
             $data = pendaftaran::orderBy('created_at', 'DESC')->paginate(5);
             $data_eskul = eskul::all();
+            $on = administrator::all();
+
         }
         // dd($data);
         return view('admin.pendaftaran-eskul.pendaftaran', compact(
+            'on',
             'data',
             'data_eskul',
             'adminmpk',
@@ -167,13 +172,13 @@ class pendaftaranController extends Controller
         $data->save();
         return redirect()->route('pendaftaran')->with('success',' Data Berhasil Di Pindahkan ke Anggota');
     }
-    public function add_pending_calon_anggota(Request $request , $id){
-        $data = pendaftaran::find($id);
+    public function add_pendaftaran(Request $request , $id){
+        $data = administrator::find($id);
     
         $data->update($request->all());
         
         $data->save();
-        return redirect()->route('editpendaftaran',[$id])->with('success',' Data Berhasil Di Update');
+        return redirect()->route('pendaftaran')->with('success',' Pendaftaran dibuka/ditutup');
     }
 
     public function editpendaftaran($id){
@@ -196,6 +201,6 @@ class pendaftaranController extends Controller
         $data = pendaftaran::find($id);  
 
         $data->delete();
-        return redirect()->route('pendaftaran')->with('success',' Data Berhasil Di Delete');
+        return redirect()->route('pendaftaran')->with('success',' Data Berhasil Di Tolak');
     }
 }
