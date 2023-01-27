@@ -33,24 +33,27 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Edit Data</h3>
+                <h3 class="card-title">Penerimaan Anggota Ekstrakurikuler</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/updateanggota/{{$data->id}}" method="POST" enctype="multipart/form-data">
+              <form action="/insertdatapendaftarantopendaftaran" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Anggota</label>
-                    <input required type="text" class="form-control" value="{{$data->nama_anggota}}" name="nama_anggota" id="exampleInputEmail1" placeholder="Masukan Nama Anggota">
+                    <label for="exampleInputEmail1">Nama Calon Anggota</label>
+                    <input required type="text" class="form-control" value="{{$data->nama_calon_anggota}}" name="nama_anggota" id="exampleInputEmail1" placeholder="Masukan Nama Anggota">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Kelas Anggota</label>
+                    <label for="exampleInputPassword1">Kelas Calon Anggota</label>
                     <select class="custom-select rounded-0" name="kelas_anggota" id="exampleSelectRounded0">
-                      <option value="{{$data->kelas_anggota}}" selected>{{$data->kelas_anggota}}</option>
-                      <option value="X">X</option>
-                      <option value="XI">XI</option>
-                      <option value="XII">XII</option>
+                      <option value="{{$data->kelas_calon_anggota}}" selected>{{$data->kelas_calon_anggota}}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Jurusan</label>
+                    <select class="custom-select rounded-0" name="jurusan" id="exampleSelectRounded0">
+                      <option value="{{$data->jurusan}}" selected>{{$data->jurusan}}</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -61,9 +64,7 @@
                     <label for="exampleInputPassword1">Nama Ekstrakurikuler</label>
                     <select class="custom-select rounded-0"  name="id_eskul" id="exampleSelectRounded0">
                       <option value="{{$data->id_eskul}}" selected>{{$data->eskul->nama_eskul}}</option>
-                      @foreach ($data_eskul as $row)
-                      <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
-                      @endforeach
+                      
                     </select>
                   </div>
                   

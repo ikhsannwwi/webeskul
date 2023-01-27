@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\administrator;
+use App\Models\anggota;
 use App\Models\pendaftaran;
 use Illuminate\Support\Str;
 use App\Models\eskul;
@@ -139,10 +141,11 @@ class pendaftaranController extends Controller
     public function pendaftaran_eskul(){
 
         $data = pendaftaran::all();
+        $on = administrator::all();
         $data_eskul = eskul::all();
         
         // dd($data);
-        return view('layout.subnav.pendaftaran-eskul.pendaftaran', compact('data','data_eskul')) ;
+        return view('layout.subnav.pendaftaran-eskul.pendaftaran', compact('data','data_eskul','on')) ;
     }
     public function detail_pendaftaran($slug){
 
@@ -155,18 +158,33 @@ class pendaftaranController extends Controller
         $data = pendaftaran::create($request->all());
         
         $data->save();
-        return redirect()->route('pendaftaran')->with('success',' Data Berhasil Di Tambahkan');
+        return redirect()->route('pendaftaran_eskul')->with('success',' Data Berhasil Di Tambahkan');
+    }
+    public function insertdatapendaftarantopendaftaran(Request $request){
+
+        $data = anggota::create($request->all());
+        
+        $data->save();
+        return redirect()->route('pendaftaran')->with('success',' Data Berhasil Di Pindahkan ke Anggota');
+    }
+    public function add_pending_calon_anggota(Request $request , $id){
+        $data = pendaftaran::find($id);
+    
+        $data->update($request->all());
+        
+        $data->save();
+        return redirect()->route('editpendaftaran',[$id])->with('success',' Data Berhasil Di Update');
     }
 
     public function editpendaftaran($id){
         $data = pendaftaran::find($id);
+        $data->delete();
         $data_eskul = eskul::all();
         return view('admin.pendaftaran-eskul.editpendaftaran', compact('data','data_eskul'));
     }
 
     public function updatependaftaran(Request $request , $id){
         $data = pendaftaran::find($id);
-        $data->slug_pendaftaran = Str::slug($request->get('judul_pendaftaran'));
     
         $data->update($request->all());
         

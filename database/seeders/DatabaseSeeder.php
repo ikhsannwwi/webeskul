@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\administrator;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
@@ -309,6 +310,9 @@ class DatabaseSeeder extends Seeder
 
 
 
+        administrator::create([
+            'on' => '1'
+        ]);
 
 
 

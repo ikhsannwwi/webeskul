@@ -79,8 +79,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota .' - '. $row->jurusan}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota .' - '. $row->jurusan}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -91,8 +91,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -112,8 +115,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -124,8 +127,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -143,8 +149,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -155,8 +161,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -173,8 +182,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -185,8 +194,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -203,8 +215,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -215,8 +227,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -233,8 +248,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -245,8 +260,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -263,8 +281,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -275,8 +293,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -293,8 +314,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -305,8 +326,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -323,8 +347,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -335,8 +359,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -353,8 +380,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -365,8 +392,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -383,8 +413,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -395,8 +425,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -413,8 +446,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -425,8 +458,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -443,8 +479,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -455,8 +491,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -473,8 +512,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -485,8 +524,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -503,8 +545,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -515,8 +557,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -533,8 +578,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -545,8 +590,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -563,8 +611,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -575,8 +623,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -593,8 +644,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -605,8 +656,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -623,8 +677,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -635,8 +689,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -653,8 +710,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -665,8 +722,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -683,8 +743,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -695,8 +755,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -713,8 +776,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -725,8 +788,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -743,8 +809,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -755,8 +821,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -773,8 +842,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -785,8 +854,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -803,8 +875,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -815,8 +887,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -833,8 +908,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -845,8 +920,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -863,8 +941,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -875,8 +953,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -893,8 +974,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -905,8 +986,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -923,8 +1007,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -935,8 +1019,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -953,8 +1040,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -965,8 +1052,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -983,8 +1073,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -995,8 +1085,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -1013,8 +1106,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -1025,8 +1118,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -1043,8 +1139,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -1055,8 +1151,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -1073,8 +1172,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -1085,8 +1184,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"  id="delete">Delete</a>
 
                         </td>
 
@@ -1103,8 +1205,8 @@
                     
                       <tr>
                         <td>{{$no++}}</td>
-                        <td>{{$row->nama_anggota}}</td>
-                        <td>{{$row->kelas_anggota}}</td>
+                        <td>{{$row->nama_calon_anggota}}</td>
+                        <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
                         
                         <td>
@@ -1115,8 +1217,11 @@
 
                         
                         <td>
-                          <a href="/editanggota/{{$row->id}}" class="btn btn-warning">Edit</a>
-                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_anggota}}"  id="delete">Delete</a>
+                          
+                                
+                              
+                          <a href="/editpendaftaran/{{$row->id}}" class="btn btn-warning terima" >Terima</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-nama="{{$row->nama_calon_anggota}}"   id="delete">Delete</a>
 
                         </td>
 
@@ -1124,16 +1229,6 @@
                       </tr>
                     @endforeach
                     @endif
-
-
-
-
-
-
-
-
-
-
 
 
                     </tbody>
@@ -1159,6 +1254,40 @@
         </div>
         <!-- /.container-fluid -->
       </section>
+
+
+      @push('script')
+              <script>
+                $('.delete').click(function () {
+                    var kepsekid = $(this).attr('data-id');
+                    var nama = $(this).attr('data-nama');
+                    var eskul = $(this).attr('data-eskul');
+                    swal({
+                        title: "Yakin ?",
+                        text: "Kamu akan menghapus data Siswa dengan nama " + nama + "  ",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                window.location = "/deletekepsek/" + kepsekid + ""
+                                swal("Data" + nama + "berhasil di hapus", {
+                                    icon: "success",
+                                });
+                            } else {
+                                swal("Data " + nama + " tidak jadi dihapus");
+                            }
+                        });
+                });
+              </script>
+              
+              <script>
+                @if (Session:: has('success'))
+                toastr.success("{{ Session::get('success') }}")
+                @endif
+              </script>
+              @endpush
 
 
 @endsection

@@ -225,6 +225,8 @@
                     
                     
                     <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web</a></li>
+                    <li class="{{ (request()->is('pendaftaran')) ? 'active' : '' }}"><a class=" dropdown-item" href="/pendaftaran">Daftar Ekstrakurikuler</a></li>
+                    
 
                   </ul>
                 </div>

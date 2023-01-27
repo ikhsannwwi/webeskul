@@ -58,7 +58,8 @@ Route::get('/kepala-sekolah', [kepsekController::class, 'kepsek'])->name('kepsek
 Route::get('/wakil-kepala-sekolah', [wakasekController::class, 'wakasek'])->name('wakasek');
 Route::get('/visi-misi-sejarah', [eskulController::class, 'visimisisejarah'])->name('visimisisejarah');
 
-Route::get('/pendaftaran-eskul', [pendaftaranController::class, 'pendaftaran_eskul'])->name('pendaftaran_eskul');
+Route::get('/pendaftaran', [pendaftaranController::class, 'pendaftaran_eskul'])->name('pendaftaran_eskul');
+Route::get('/pendaftaran/{slug}', [pendaftaranController::class, 'pendaftaran_eskul_slug'])->name('pendaftaran_eskul_slug');
 
 // Route::get('/administrator', [administratorController::class, 'index'])->name('administrator');
 
@@ -103,10 +104,12 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
     
     
     //pendaftaran
-       Route::get('/pendaftaran', [pendaftaranController::class, 'index'])->name('pendaftaran')->middleware('auth');
+       Route::get('/pendaftaran-eskul', [pendaftaranController::class, 'index'])->name('pendaftaran')->middleware('auth');
+       Route::post('/add-pending-calon-anggota/{id}', [pendaftaranController::class, 'add_pending_calon_anggota'])->name('add_pending_calon_anggota')->middleware('auth');
        Route::post('/insertdatapendaftaran', [pendaftaranController::class, 'insertdatapendaftaran'])->name('insertdatapendaftaran');
+       Route::post('/insertdatapendaftarantopendaftaran', [pendaftaranController::class, 'insertdatapendaftarantopendaftaran'])->name('insertdatapendaftarantopendaftaran');
    
-       Route::get('/editpendaftaran/{id}', [pendaftaranController::class, 'editpendaftaran'])->name('editpendaftaran{id}')->middleware('auth');
+       Route::get('/editpendaftaran/{id}', [pendaftaranController::class, 'editpendaftaran'])->name('editpendaftaran')->middleware('auth');
        Route::post('/updatependaftaran/{id}', [pendaftaranController::class, 'updatependaftaran'])->name('updatependaftaran');
        
        Route::get('/deletependaftaran/{id}', [pendaftaranController::class, 'deletependaftaran'])->name('deletependaftaran');   
