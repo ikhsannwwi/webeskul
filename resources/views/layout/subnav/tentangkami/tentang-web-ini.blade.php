@@ -50,7 +50,7 @@
         
         <div class="col-lg-6 pr-50 sm:pr-15">
           <div class="composition -type-8">
-            <div class="-el-1"><img style="width: 400px; height: 400px;" src="{{asset('images/tentang-web/pak-andri.png')}}" alt="$row->logo"></div>
+            <div class="-el-1"><img style="width: 400px; height: 400px;" src="{{asset('images/tentang-web/pak-andri.png')}}" alt="image"></div>
           </div>
         </div>
 
@@ -62,6 +62,13 @@
             Siswa kami yang bernama Naufal Rabani, Yofi Ilham Fauzi, Muhammad Ikhsan Nawawi dan Yusuf Sekhan dengan bimbingan bapak Andriansyah Maulana, S.Kom., M.Kom. sebagai pembimbing IT Club SMKN 1 Garut 
             Periode 2020 - Sekarang yang termasuk program kerja dari kepengurusan IT Club 2022 yang dipimpin oleh Naufal Rabani dan Yusuf Sekhan
             dengan kolaborasi dengan OSIS dan seluruh ekstrakurikuler di SMKN 1 Garut.</p>
+            
+          </div>
+      </div>
+        <div class="row y-gap-50 justify-between items-center">
+
+          
+          <div class="col-lg-12">
             
             <p class="text-dark-1 mt-30">Saya mengucapkan Terima Kasih Kepada Bapak Kepala Sekolah yaitu Bapak H. Bejo Siswoyo, S.Tp., M.Pd. yang selalu mendukung dan memberikan semangat kepada kami,
               serta Bapak Wakil Kepala Sekolah Bidang Kesiswaan yaitu Bapak Nurdin, S.T., M.Pd. yang telah mendukung sistem informasi ekstrakurikuler SMKN 1 Garut, Bapak Staf Wakil Kepala Sekolah
@@ -94,7 +101,7 @@
 
   <section class="layout-pt-lg layout-pb-md">
     <div data-anim-wrap class="container">
-      <div data-anim-child="slide-left delay-1" class="row y-gap-20 justify-between items-center">
+      <div {{--data-anim-child="slide-left delay-1"--}} class="row y-gap-20 justify-between items-center">
         <div class="col-lg-6">
 
           <div class="sectionTitle ">
@@ -111,7 +118,7 @@
       <div class="row y-gap-30 pt-50">
 
         <div class="col-lg-3 col-sm-6">
-          <div data-anim-child="slide-left delay-2" class="teamCard -type-1 -teamCard-hover">
+          <div  class="teamCard -type-1 -teamCard-hover">
             <div class="teamCard__image">
               <img style="width: 300px; height: 350px;" src="{{asset('fotoanggota/')}}" alt="image">
               <div class="teamCard__socials">
@@ -125,7 +132,7 @@
             </div>
             <div class="teamCard__content">
               <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
-              <p class="teamCard__text">Full Stack Develover</p>
+              <p class="teamCard__text">Backend Develover</p>
 
             </div>
             <div class="teamCard-footer">
@@ -138,7 +145,7 @@
         </div>
         
         <div class="col-lg-3 col-sm-6">
-          <div data-anim-child="slide-left delay-2" class="teamCard -type-1 -teamCard-hover">
+          <div  class="teamCard -type-1 -teamCard-hover">
             <div class="teamCard__image">
               <img style="width: 300px; height: 350px;" src="{{asset('fotoanggota/')}}" alt="image">
               <div class="teamCard__socials">
@@ -151,8 +158,8 @@
               </div>
             </div>
             <div class="teamCard__content">
-              <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
-              <p class="teamCard__text">Full Stack Develover</p>
+              <h4 class="teamCard__title">Yusuf</h4>
+              <p class="teamCard__text">Backend Develover</p>
 
             </div>
             <div class="teamCard-footer">
@@ -165,7 +172,7 @@
         </div>
         
         <div class="col-lg-3 col-sm-6">
-          <div data-anim-child="slide-left delay-2" class="teamCard -type-1 -teamCard-hover">
+          <div  class="teamCard -type-1 -teamCard-hover">
             <div class="teamCard__image">
               <img style="width: 300px; height: 350px;" src="{{asset('fotoanggota/')}}" alt="image">
               <div class="teamCard__socials">
@@ -178,8 +185,8 @@
               </div>
             </div>
             <div class="teamCard__content">
-              <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
-              <p class="teamCard__text">Full Stack Develover</p>
+              <h4 class="teamCard__title">Naufal</h4>
+              <p class="teamCard__text">Frontend Develover</p>
 
             </div>
             <div class="teamCard-footer">
@@ -192,7 +199,7 @@
         </div>
         
         <div class="col-lg-3 col-sm-6">
-          <div data-anim-child="slide-left delay-2" class="teamCard -type-1 -teamCard-hover">
+          <div  class="teamCard -type-1 -teamCard-hover">
             <div class="teamCard__image">
               <img style="width: 300px; height: 350px;" src="{{asset('fotoanggota/')}}" alt="image">
               <div class="teamCard__socials">
@@ -205,8 +212,8 @@
               </div>
             </div>
             <div class="teamCard__content">
-              <h4 class="teamCard__title">Mochammad Ikhsan Nawawi</h4>
-              <p class="teamCard__text">Full Stack Develover</p>
+              <h4 class="teamCard__title">Ilham</h4>
+              <p class="teamCard__text">Frontend Develover</p>
 
             </div>
             <div class="teamCard-footer">
