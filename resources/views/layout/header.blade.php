@@ -225,9 +225,17 @@
                     
                     
                     <li class="{{ (request()->is('tentang-web-ini')) ? 'active' : '' }}"><a class=" dropdown-item" href="/tentang-web-ini">Tentang Web</a></li>
-                    <li class="{{ (request()->is('pendaftaran')) ? 'active' : '' }}"><a class=" dropdown-item" href="/pendaftaran">Daftar Ekstrakurikuler</a></li>
                     
-
+                    <li class="{{ (request()->is('pendaftaran')) ? 'active' : '' }}"><a class=" dropdown-item" href="/pendaftaran">Daftar Ekstrakurikuler</a></li>
+                    {{-- <li class="menu-item-has-children dropdown {{ (request()->is('pendaftaran','-')) ? 'active' : '' }}" >
+                      <a data-barba  href="#">Daftar Ekstrakurikuler <i class="icon-chevron-right dropdown-toggle text-13 ml-10"></i></a>
+                      <ul class="subnav dropdown-menu martoppp" >
+                        
+                        
+                        
+                      </ul>
+                    </li> --}}
+                    
                   </ul>
                 </div>
     
@@ -279,7 +287,7 @@
     
         <div class="col-auto">
           <div class="header-right d-flex items-center">
-            <div class="header-right__icons text-white d-flex items-center">
+            <div class="header-right__icons text-white d-flex items-center ">
     
               <div class="relative -before-border px-20 sm:px-15">
     
@@ -309,7 +317,7 @@
         <div class="footer-cta pt-5 pb-5">
             <div class="row">
                 <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
+                    <div class="single-cta d-flex">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                             <h4>Find us</h4>
@@ -318,7 +326,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
+                    <div class="single-cta d-flex">
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
                             <h4>Call us</h4>
@@ -329,7 +337,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
+                    <div class="single-cta d-flex">
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
                             <h4>Mail us</h4>

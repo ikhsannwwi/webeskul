@@ -47,8 +47,10 @@
             <h3 class="text-24 fw-500">Masukan Data anda</h3>
             <p class="mt-25">Pilih Ekstrakurikuler sesuai dengan kemauan anda<br> tincidunt egetnvallis.</p>
 
+            
                 @foreach ($on as $item)
                 @if ($item->on == 1)
+            <a href="/list-eskul-pendaftaran" >Lihat Data Calon Ekstrakurikuler</a>
 
             <form class="contact-form row y-gap-30 pt-60 lg:pt-40" action="/insertdatapendaftaran" method="POST">
               @csrf
@@ -58,7 +60,7 @@
               </div>
               <div class="col-12">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nama Siswa</label>
-                <input type="text" name="nama_calon_anggota" placeholder="Email...">
+                <input type="text" name="nama_calon_anggota" placeholder="Nama Siswa...">
               </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas Anggota</label>
@@ -93,6 +95,10 @@
                   <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
                   @endforeach
                 </select>
+              </div>
+              <div class="col-12">
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Alasan Masuk Ekstrakurikuler tersebut</label>
+                <textarea type="text" name="alasan" placeholder="Alasan..."></textarea>
               </div>
               <div class="col-12">
                 <button type="submit" id="submit" class="button -md -purple-1 text-white">

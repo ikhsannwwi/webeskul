@@ -152,18 +152,25 @@ class pendaftaranController extends Controller
         // dd($data);
         return view('layout.subnav.pendaftaran-eskul.pendaftaran', compact('data','data_eskul','on')) ;
     }
+    public function list_eskul(){
+
+        $data = eskul::all();
+        // dd($detail);
+        return view('layout.subnav.pendaftaran-eskul.list-eskul', compact('data')) ;
+    }
     public function detail_pendaftaran($slug){
 
-        $detail = pendaftaran::where('slug_pendaftaran', $slug)->first();
-        // dd($detail);
-        return view('layout.subnav.detail-pendaftaran', compact('detail')) ;
+        $data = eskul::with('pendaftaran')->get()
+            ->where('slug', $slug)->first();
+        // dd($data);
+        return view('layout.subnav.pendaftaran-eskul.detail-pendaftaran', compact('data')) ;
     }
 
     public function insertdatapendaftaran(Request $request){
         $data = pendaftaran::create($request->all());
         
         $data->save();
-        return redirect()->route('pendaftaran_eskul')->with('success',' Data Berhasil Di Tambahkan');
+        return redirect()->route('list_eskul')->with('success',' Data Berhasil Di Tambahkan');
     }
     public function insertdatapendaftarantopendaftaran(Request $request){
 

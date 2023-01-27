@@ -82,6 +82,7 @@
                         <th>Nama Pendaftar</th>
                         <th>Kelas Pendaftar</th>
                         <th>Nomor Induk Siswa</th>
+                        <th>Alasan</th>
                         <th>Ekstrakurikuler</th>
                         <th>Aksi</th>
                       </tr>
@@ -100,6 +101,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota .' - '. $row->jurusan}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -136,6 +139,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -170,6 +175,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -203,6 +210,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -236,6 +245,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -269,6 +280,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -302,6 +315,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -335,6 +350,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -368,6 +385,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -401,6 +420,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -434,6 +455,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -467,6 +490,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -500,6 +525,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -533,6 +560,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -566,6 +595,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -599,6 +630,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -632,6 +665,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -665,6 +700,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -698,6 +735,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -731,6 +770,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -764,6 +805,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -797,6 +840,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -830,6 +875,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -863,6 +910,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -896,6 +945,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -929,6 +980,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -962,6 +1015,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -995,6 +1050,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1028,6 +1085,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1061,6 +1120,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1094,6 +1155,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1127,6 +1190,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1160,6 +1225,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1193,6 +1260,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">
@@ -1226,6 +1295,8 @@
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota}}</td>
                         <td>{{$row->nis}}</td>
+                        <td>{{$row->alasan}}</td>
+
                         
                         <td>
                           <img src="{{asset('images/logo-eskul/'.$row->eskul->logo)}}" width="120px" alt="{{$row->eskul->logo}}">

@@ -59,7 +59,8 @@ Route::get('/wakil-kepala-sekolah', [wakasekController::class, 'wakasek'])->name
 Route::get('/visi-misi-sejarah', [eskulController::class, 'visimisisejarah'])->name('visimisisejarah');
 
 Route::get('/pendaftaran', [pendaftaranController::class, 'pendaftaran_eskul'])->name('pendaftaran_eskul');
-Route::get('/pendaftaran/{slug}', [pendaftaranController::class, 'pendaftaran_eskul_slug'])->name('pendaftaran_eskul_slug');
+Route::get('/list-eskul-pendaftaran', [pendaftaranController::class, 'list_eskul'])->name('list_eskul');
+Route::get('/pendaftaran/{slug}', [pendaftaranController::class, 'detail_pendaftaran'])->name('detail_pendaftaran');
 
 // Route::get('/administrator', [administratorController::class, 'index'])->name('administrator');
 
