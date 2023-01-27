@@ -167,6 +167,14 @@ class pendaftaranController extends Controller
     }
 
     public function insertdatapendaftaran(Request $request){
+        $request->validate([
+            'nis' => 'required|unique:pendaftarans',
+            'nama_calon_anggota' => 'required',
+            'kelas_calon_anggota' => 'required',
+            'jurusan' => 'required',
+            'id_eskul' => 'required',
+            'alasan' => 'required',
+        ]);
         $data = pendaftaran::create($request->all());
         
         $data->save();

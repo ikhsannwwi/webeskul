@@ -51,29 +51,41 @@
                 @foreach ($on as $item)
                 @if ($item->on == 1)
             <a href="/list-eskul-pendaftaran" >Lihat Data Calon Ekstrakurikuler</a>
-
-            <form class="contact-form row y-gap-30 pt-60 lg:pt-40" action="/insertdatapendaftaran" method="POST">
+            
+            <form class="contact-form row y-gap-30  pt-60 lg:pt-40" action="/insertdatapendaftaran" method="POST">
+            @foreach ($errors->all() as $error)
+                <div class="alert alert-danger">{{$error}}</div>
+            @endforeach
               @csrf
-              <div class="col-12">
-                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nomor Induk Siswa</label>
-                <input type="number" name="nis" placeholder="Nomor Induk Siswa...">
+              <div class="form-group col-12 form-control">
+                <label  class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nomor Induk Siswa</label>
+                <input  class="form-check-input @error('nis') is-invalid @enderror" type="number" name="nis" placeholder="Nomor Induk Siswa...">
+                @error('nis')
+                    <span class="invalid-feedback">{{$message}}</span>
+                @enderror
               </div>
-              <div class="col-12">
+              <div class="form-group col-12">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nama Siswa</label>
-                <input type="text" name="nama_calon_anggota" placeholder="Nama Siswa...">
+                <input class="form-check-input @error('nama_calon_anggota') is-invalid @enderror" type="text" name="nama_calon_anggota" placeholder="Nama Siswa...">
+                @error('nama_calon_anggota')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
               </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas Anggota</label>
-                <select class="custom-select rounded-0" name="kelas_calon_anggota" id="exampleSelectRounded0">
+                <select class="@error('kelas_calon_anggota') is-invalid @enderror custom-select rounded-0" name="kelas_calon_anggota" id="exampleSelectRounded0">
                   <option selected>Open this select menu</option>
                   <option value="X">X</option>
                   <option value="XI">XI</option>
                   <option value="XII">XII</option>
                 </select>
+                @error('kelas_calon_anggota')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
               </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Jurusan</label>
-                <select class="custom-select rounded-0" name="jurusan" id="exampleSelectRounded0">
+                <select class="@error('jurusan') is-invalid @enderror custom-select rounded-0" name="jurusan" id="exampleSelectRounded0">
                   <option selected>Open this select menu</option>
                   <option value="PPL/SIJA">PPL/SIJA</option>
                   <option value="AKL">AKL</option>
@@ -86,21 +98,30 @@
                   <option value="TLM">TLM</option>
                   <option value="TET">TET</option>
                 </select>
+                @error('jurusan')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
               </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Nama Ekstrakurikuler</label>
-                <select class="custom-select rounded-0"  name="id_eskul" id="exampleSelectRounded0">
+                <select class="@error('id_eskul') is-invalid @enderror custom-select rounded-0"  name="id_eskul" id="exampleSelectRounded0">
                   <option selected>Open this Select Menu</option>
                   @foreach ($data_eskul as $row)
                   <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
                   @endforeach
                 </select>
+                @error('id_eskul')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
               </div>
-              <div class="col-12">
+              <div class="form-group col-12">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Alasan Masuk Ekstrakurikuler tersebut</label>
-                <textarea type="text" name="alasan" placeholder="Alasan..."></textarea>
+                <textarea class="form-check-input @error('alasan') is-invalid @enderror" type="text" name="alasan" placeholder="Alasan..."></textarea>
+                @error('alasan')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
               </div>
-              <div class="col-12">
+              <div class="form-group col-12">
                 <button type="submit" id="submit" class="button -md -purple-1 text-white">
                   Send Message
                 </button>
