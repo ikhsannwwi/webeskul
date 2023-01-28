@@ -72,9 +72,9 @@
                   @enderror
               </div>
               <div class="form-group">
-                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas Anggota</label>
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas</label>
                 <select class="@error('kelas_calon_anggota') is-invalid @enderror custom-select rounded-0" name="kelas_calon_anggota" id="exampleSelectRounded0">
-                  <option selected>Open this select menu</option>
+                  <option value="" selected>Open this select menu</option>
                   <option value="X">X</option>
                   <option value="XI">XI</option>
                   <option value="XII">XII</option>
@@ -86,15 +86,15 @@
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Jurusan</label>
                 <select class="@error('jurusan') is-invalid @enderror custom-select rounded-0" name="jurusan" id="exampleSelectRounded0">
-                  <option selected>Open this select menu</option>
-                  <option value="PPL/SIJA">PPL/SIJA</option>
+                  <option value="" selected>Open this select menu</option>
+                  <option value="PPL">PPL</option>
                   <option value="AKL">AKL</option>
-                  <option value="OTP">OTP</option>
-                  <option value="BDP">BDP</option>
-                  <option value="MLG">MLG</option>
-                  <option value="FKK">FKK</option>
-                  <option value="TKJ">TKJ</option>
-                  <option value="MTM">MTM</option>
+                  <option value="MPL">MPL</option>
+                  <option value="PMS">PMS</option>
+                  <option value="TLG">TLG</option>
+                  <option value="TKF">TKF</option>
+                  <option value="TJK">TJK</option>
+                  <option value="DKV">DKV</option>
                   <option value="TLM">TLM</option>
                   <option value="TET">TET</option>
                 </select>
@@ -103,9 +103,9 @@
                   @enderror
               </div>
               <div class="form-group">
-                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Nama Ekstrakurikuler</label>
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Ekstrakurikuler</label>
                 <select class="@error('id_eskul') is-invalid @enderror custom-select rounded-0"  name="id_eskul" id="exampleSelectRounded0">
-                  <option selected>Open this Select Menu</option>
+                  <option value="" selected>Open this Select Menu</option>
                   @foreach ($data_eskul as $row)
                   <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
                   @endforeach

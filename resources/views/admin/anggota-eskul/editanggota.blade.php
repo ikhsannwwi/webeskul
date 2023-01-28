@@ -58,8 +58,28 @@
                     <input required type="number" class="form-control" value="{{$data->nis}}" name="nis" id="exampleInputEmail1" placeholder="Masukan Nomor Induk Siswa">
                   </div>
                   <div class="form-group">
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Jurusan</label>
+                <select class="{{--@error('jurusan') is-invalid @enderror--}} custom-select rounded-0" name="jurusan" id="exampleSelectRounded0">
+                  <option value="{{$data->jurusan}}" selected>{{$data->jurusan}}</option>
+                  <option value="PPL">PPL</option>
+                  <option value="AKL">AKL</option>
+                  <option value="MPL">MPL</option>
+                  <option value="PMS">PMS</option>
+                  <option value="TLG">TLG</option>
+                  <option value="TKF">TKF</option>
+                  <option value="TJK">TJK</option>
+                  <option value="DKV">DKV</option>
+                  <option value="TLM">TLM</option>
+                  <option value="TET">TET</option>
+                </select>
+                {{-- @error('jurusan')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror --}}
+              </div>
+                  <div class="form-group">
                     <label for="exampleInputPassword1">Nama Ekstrakurikuler</label>
                     <select class="custom-select rounded-0" name="id_eskul" id="exampleSelectRounded0">
+                      
                       @if (auth()->user()->role=='adminmpk')
                         <option value="1" selected>Majelis Permusyawaratan Kelas</option>
                       @endif
@@ -163,8 +183,7 @@
                         <option value="34" selected>Deutsch Club</option>
                         @endif
                     @if (auth()->user()->role=='root')
-                        
-                      <option selected>Open this select menu</option>
+                    <option value="{{$data->id_eskul}}" selected>{{$data->eskul->nama_eskul}}</option>
                       @foreach ($data_eskul as $row)
                       <option value="{{$row->id}}">{{$row->nama_eskul}}</option>
                       @endforeach
