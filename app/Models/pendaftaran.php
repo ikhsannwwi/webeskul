@@ -25,4 +25,5 @@ class pendaftaran extends Model
     public function eskul(){
         return $this->belongsTo(eskul::class  ,'id_eskul', 'id');
     }
+    
 }

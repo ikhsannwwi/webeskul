@@ -105,6 +105,7 @@ Route::get('/logout', [authController::class, 'logout'])->name('logout');
     
     
     //pendaftaran
+       Route::get('/pendaftaran-eskul/export-excel', [pendaftaranController::class, 'export'])->name('export_pendaftaran_excel')->middleware('auth');
        Route::get('/pendaftaran-eskul', [pendaftaranController::class, 'index'])->name('pendaftaran')->middleware('auth');
        Route::post('/add-pendaftaran/{id}', [pendaftaranController::class, 'add_pendaftaran'])->name('add_pendaftaran')->middleware('auth');
        Route::post('/insertdatapendaftaran', [pendaftaranController::class, 'insertdatapendaftaran'])->name('insertdatapendaftaran');

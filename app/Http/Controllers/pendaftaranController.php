@@ -8,6 +8,7 @@ use App\Models\pendaftaran;
 use Illuminate\Support\Str;
 use App\Models\eskul;
 use Illuminate\Http\Request;
+use App\Exports\daftarCalonAnggota;
 
 class pendaftaranController extends Controller
 {
@@ -174,11 +175,19 @@ class pendaftaranController extends Controller
             'jurusan' => 'required',
             'id_eskul' => 'required',
             'alasan' => 'required',
+            'email' => 'required|unique:pendaftarans',
+            'no_wa' => 'required',
         ]);
         $data = pendaftaran::create($request->all());
         
         $data->save();
         return redirect()->route('list_eskul')->with('success',' Data Berhasil Di Tambahkan');
+    }
+    public function export() 
+    {
+        
+
+            return pendaftaran::download(new daftarCalonAnggota, 'daftar-calon-anggota.xlsx');
     }
     public function insertdatapendaftarantopendaftaran(Request $request){
 

@@ -15,7 +15,7 @@ class anggota extends Model
     public function slugConfigs(): array
     {
         return [
-            'slug_anggota' => 'nama_anggota'
+            'slug_anggota' => 'nis'
         ];
     }
 

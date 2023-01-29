@@ -20,6 +20,8 @@ class CreatePendaftaransTable extends Migration
             $table->string('kelas_calon_anggota');
             $table->string('jurusan');
             $table->foreignId('id_eskul');
+            $table->string('email');
+            $table->bigInteger('no_wa')->unique();
             $table->text('alasan');
             $table->timestamps();
         });

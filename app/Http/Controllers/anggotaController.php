@@ -153,6 +153,14 @@ class anggotaController extends Controller
     }
 
     public function insertdataanggota(Request $request){
+        $request->validate([
+            'nis' => 'required|unique:anggotas',
+            'nama_anggota' => 'required',
+            'kelas_anggota' => 'required',
+            'id_eskul' => 'required',
+            'jurusan' => 'required',
+            'slug_anggota' => 'required',
+        ]);
         $data = anggota::create($request->all());
         
         $data->save();
@@ -166,6 +174,14 @@ class anggotaController extends Controller
     }
 
     public function updateanggota(Request $request , $id){
+        $request->validate([
+            'nis' => 'required|unique:anggotas',
+            'nama_anggota' => 'required',
+            'kelas_anggota' => 'required',
+            'id_eskul' => 'required',
+            'jurusan' => 'required',
+            'slug_anggota' => 'required',
+        ]);
         $data = anggota::find($id);
         $data->slug_anggota = Str::slug($request->get('judul_anggota'));
     

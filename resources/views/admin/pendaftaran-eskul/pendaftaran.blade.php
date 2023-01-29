@@ -75,6 +75,7 @@
                       @endif
                       @endforeach
                     @endif
+                    <a href="/pendaftaran-eskul/export-excel">Export Excel</a>
                   <table id="example2" class="table table-bordered table-hover">
                     <thead>
                       <tr>

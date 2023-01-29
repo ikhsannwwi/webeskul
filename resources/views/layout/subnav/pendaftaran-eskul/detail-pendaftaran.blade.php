@@ -50,7 +50,7 @@
   <section class="layout-pt-md layout-pb-lg">
     <div class="container">
       <div class="row no-gutters justify-content-center">
-        <div class="col-xl-8 col-lg-9 col-md-11">
+        <div class="col-lg-11">
 
 
           <div class="shopCompleted-footer bg-light-4 border-light rounded-8">
@@ -68,6 +68,8 @@
                           <th>NIS</th>
                           <th>Nama Calon Anggota</th>
                           <th>Kelas</th>
+                          <th>Email</th>
+                          <th>Nomor Whatsapp</th>
                           <th>Alasan</th>
                       </tr>
                   </thead>
@@ -81,6 +83,8 @@
                         <td>{{$row->nis}}</td>
                         <td>{{$row->nama_calon_anggota}}</td>
                         <td>{{$row->kelas_calon_anggota .' - '.$row->jurusan}}</td>
+                        <td>{{$row->email}}</td>
+                        <td>{{$row->no_wa}}</td>
                         <td>{{$row->alasan}}</td>
                     </tr>
                     

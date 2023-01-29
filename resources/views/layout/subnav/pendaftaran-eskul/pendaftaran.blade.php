@@ -71,6 +71,20 @@
                       <span class="invalid-feedback">{{$message}}</span>
                   @enderror
               </div>
+              <div class="form-group col-12">
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Email</label>
+                <input class="form-check-input @error('email') is-invalid @enderror" type="text" name="email" placeholder="Email Siswa...">
+                @error('email')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
+              </div>
+              <div class="form-group col-12">
+                <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">Nomor Whatsapp</label>
+                <input class="form-check-input @error('no_wa') is-invalid @enderror" type="number" name="no_wa" placeholder="Nomor Whatsapp Siswa dengan format( 62xxxxxxxxxxx )">
+                @error('no_wa')
+                      <span class="invalid-feedback">{{$message}}</span>
+                  @enderror
+              </div>
               <div class="form-group">
                 <label class="text-16 lh-1 fw-500 text-dark-1 mb-10" for="exampleInputPassword1">Kelas</label>
                 <select class="@error('kelas_calon_anggota') is-invalid @enderror custom-select rounded-0" name="kelas_calon_anggota" id="exampleSelectRounded0">
